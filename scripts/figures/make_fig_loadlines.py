@@ -4,7 +4,8 @@ import sys
 
 import numpy as np
 
-os.environ.setdefault("MPLCONFIGDIR", os.path.abspath(".mplconfig"))
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+os.environ.setdefault("MPLCONFIGDIR", os.path.join(_ROOT, ".cache", "mplconfig"))
 import matplotlib
 
 matplotlib.use("Agg")
@@ -15,7 +16,7 @@ plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
 plt.rcParams["axes.unicode_minus"] = False
 plt.rcParams["figure.dpi"] = 170
 
-OUT = "figs"
+OUT = os.path.join(_ROOT, "assets", "figs")
 os.makedirs(OUT, exist_ok=True)
 
 Ts, w0 = 0.688, 837.8          # 电机：堵转转矩、空载角速度（与 fig2 同一台）

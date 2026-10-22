@@ -1,9 +1,9 @@
 """检查复习资料里是否还有“旧符号 / 一字母多义”的残留。
 
-用法：
-    python check_symbols.py [目录]
+用法（在项目根目录）：
+    python scripts/check_symbols.py [目录]
 
-退出码 0 表示干净，1 表示有可疑残留（逐条打印 文件:行号 + 上下文）。
+默认检查 src/content/；退出码 0 表示干净，1 表示有可疑残留（逐条打印 文件:行号 + 上下文）。
 规则来自 00_使用说明.md 的符号约定；新增规则直接在 RULES 里加。
 """
 import glob
@@ -65,5 +65,8 @@ def main(root):
 
 
 if __name__ == "__main__":
-    root = sys.argv[1] if len(sys.argv) > 1 else os.path.dirname(os.path.abspath(__file__))
+    default_root = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src", "content"
+    )
+    root = sys.argv[1] if len(sys.argv) > 1 else default_root
     sys.exit(main(root))

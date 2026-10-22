@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="generator" content="scripts/build.mjs">
 <title>设计与制造 1 · L1–L5 复习</title>
 <style>
 :root{--ink:#20242b;--muted:#5b6675;--line:#dfe5ec;--accent:#0d3b66;--accent2:#14618f;--paper:#f4f1ea;--card:#ffffff;--soft:#f3f8fc;}
@@ -66,23 +68,23 @@ footer{max-width:1180px;margin:0 auto;padding:0 28px 40px;color:#8b96a5;font-siz
 <div class="kicker">DESIGN &amp; MANUFACTURING</div>
 <h1>设计与制造 1 · L1–L5 复习</h1>
 <p class="sub">L1 机构基础 · L2 四杆分析与综合 · L3 电机与传动 · L4 设计流程/材料/齿轮几何 · L5 齿轮受力与强度</p>
-<p class="hint">按官方课件 L1–L5 组织：概念 + 公式 + 例题 + 说明；公式由 MathJax 渲染（需联网），Ctrl+P 可打印或存 PDF。</p>
-<button class="printbtn" onclick="window.print()">打印 / 存 PDF</button>
+<p class="hint">按官方课件 L1–L5 组织：概念 + 公式 + 例题 + 说明；公式由本地 MathJax 渲染，断网也能正常显示；Ctrl+P 可打印或存 PDF。</p>
+<button class="printbtn" type="button" onclick="window.print()">打印 / 存 PDF</button>
 </div></header>
 <div class="layout">
 <aside class="sidebar">
-<div class="navtitle">目录</div><nav><ul class="toc"><li class="chap"><a href="#ch-1">使用说明：按官方课件 L1–L5 组织的复习资料</a><ul><li><a href="#sec-2">0 这份材料是什么</a></li><li><a href="#sec-3">1 L1–L5 与文件的对应</a></li><li><a href="#sec-4">1.1 符号约定（全文档统一，先看这张表）</a></li><li><a href="#sec-5">2 三条主线（先建立框架，再背细节）</a></li><li><a href="#sec-6">3 四天计划（每天 4–5 小时）</a></li><li><a href="#sec-12">4 考试技巧（能多拿 10–15 分）</a></li><li><a href="#sec-13">5 常见问题</a></li></ul></li><li class="chap"><a href="#ch-14">L1 机构学基础与四杆机构</a><ul><li><a href="#sec-15">0 课件页码 → 本节</a></li><li><a href="#sec-17">1 机构、构件、运动副、运动简图</a></li><li><a href="#sec-22">2 自由度：Gruebler–Kutzbach 公式</a></li><li><a href="#sec-29">3 传动角与死点：力能不能传过去</a></li><li><a href="#sec-35">4 平面机构与空间机构</a></li><li><a href="#sec-36">5 Grashof 判据与四种基本型式</a></li><li><a href="#sec-42">6 分析与综合（analysis vs synthesis）</a></li><li><a href="#sec-43">7 图解法综合（L1 后半 + L2 前半）</a></li><li><a href="#sec-48">8 解析综合的数学准备（为 L2 铺垫）</a></li><li><a href="#sec-51">9 这一讲可以"带过"的内容</a></li><li><a href="#sec-52">10 易错点清单</a></li><li><a href="#sec-53">11 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-54">L2 四杆机构的分析与综合</a><ul><li><a href="#sec-55">0 课件页码 → 本节</a></li><li><a href="#sec-57">1 位置分析：为什么"有两个解"</a></li><li><a href="#sec-62">2 速度分析</a></li><li><a href="#sec-66">3 加速度分析（知道方法即可）</a></li><li><a href="#sec-67">4 图解法综合（要点回顾）</a></li><li><a href="#sec-71">5 解析法综合：标准二元组（dyad）</a></li><li><a href="#sec-79">6 MATLAB 写法（照抄即可）</a></li><li><a href="#sec-80">7 四种计算框架（这一页是"方法论"，简答常考）</a></li><li><a href="#sec-81">8 你的作业（轨迹综合）怎么讲</a></li><li><a href="#sec-85">9 补充：函数生成与 Freudenstein 方程</a></li><li><a href="#sec-86">10 易错点清单</a></li><li><a href="#sec-87">11 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-88">L3 电机与传动（Transmission, Gears, and Belts）</a><ul><li><a href="#sec-89">0 课件页码 → 本节</a></li><li><a href="#sec-91">1 为什么需要传动</a></li><li><a href="#sec-92">2 直流电机模型（本讲的地基）</a></li><li><a href="#sec-101">3 传动比与电机选型</a></li><li><a href="#sec-106">4 齿轮传动类型</a></li><li><a href="#sec-108">5 渐开线与齿轮几何</a></li><li><a href="#sec-117">6 轮系</a></li><li><a href="#sec-123">7 行星（周转）轮系</a></li><li><a href="#sec-129">8 谐波减速器</a></li><li><a href="#sec-130">9 CVT（无级变速）</a></li><li><a href="#sec-131">10 带与链（课件 86–90 页）</a></li><li><a href="#sec-135">11 易错点清单</a></li><li><a href="#sec-136">12 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-137">L4 设计流程、材料与齿轮几何设计</a><ul><li><a href="#sec-138">0 课件页码 → 本节</a></li><li><a href="#sec-140">1 设计流程</a></li><li><a href="#sec-146">2 材料选择</a></li><li><a href="#sec-155">3 齿轮几何设计</a></li><li><a href="#sec-163">4 易错点清单</a></li><li><a href="#sec-164">5 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-165">L5 齿轮受力与强度</a><ul><li><a href="#sec-166">0 课件页码 → 本节</a></li><li><a href="#sec-168">1 齿面受力</a></li><li><a href="#sec-174">2 失效模式</a></li><li><a href="#sec-179">3 弯曲强度：Lewis 公式</a></li><li><a href="#sec-186">4 接触强度（齿面点蚀）</a></li><li><a href="#sec-190">5 AGMA 方法（不考，但要"知道有它"）</a></li><li><a href="#sec-191">6 设计准则：先弯还是先接？</a></li><li><a href="#sec-192">7 与 L4 的衔接</a></li><li><a href="#sec-193">8 易错点清单</a></li><li><a href="#sec-194">9 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-195">公式速查卡（按 L1–L5 排列，考前 30 分钟看这一份）</a><ul><li><a href="#sec-196">L1 机构与四杆基础</a></li><li><a href="#sec-197">L2 四杆分析与综合</a></li><li><a href="#sec-198">L3 电机与传动</a></li><li><a href="#sec-199">L4 设计流程、材料、齿轮几何</a></li><li><a href="#sec-200">L5 齿轮受力与强度</a></li><li><a href="#sec-201">常用数值与常数</a></li><li><a href="#sec-202">中英术语对照（英文卷必备）</a></li><li><a href="#sec-203">考场时间分配（100 分钟）</a></li></ul></li><li class="chap"><a href="#ch-204">模拟卷（L1–L5，100 分 / 100 分钟）</a><ul><li><a href="#sec-205">一、自由度与机构基础（8 分）</a></li><li><a href="#sec-206">二、四杆机构：类型、急回、传动角（12 分）</a></li><li><a href="#sec-207">三、位置与速度分析（10 分）</a></li><li><a href="#sec-208">四、图解法综合（10 分）</a></li><li><a href="#sec-209">五、直流电机与传动（10 分）</a></li><li><a href="#sec-210">六、齿轮几何与轮系（12 分）</a></li><li><a href="#sec-211">七、行星轮系与谐波（10 分）</a></li><li><a href="#sec-212">八、齿轮受力与弯曲强度（12 分）</a></li><li><a href="#sec-213">九、设计流程与材料（8 分）</a></li><li><a href="#sec-214">十、简答（8 分，每题 2 分）</a></li></ul></li><li class="chap"><a href="#ch-215">模拟卷答案与评分要点</a><ul><li><a href="#sec-216">一、自由度与机构基础（8 分）</a></li><li><a href="#sec-217">二、四杆机构：类型、急回、传动角（12 分）</a></li><li><a href="#sec-218">三、位置与速度分析（10 分）</a></li><li><a href="#sec-219">四、图解法综合（10 分）</a></li><li><a href="#sec-220">五、直流电机与传动（10 分）</a></li><li><a href="#sec-221">六、齿轮几何与轮系（12 分）</a></li><li><a href="#sec-222">七、行星轮系与谐波（10 分）</a></li><li><a href="#sec-223">八、齿轮受力与弯曲强度（12 分）</a></li><li><a href="#sec-224">九、设计流程与材料（8 分）</a></li><li><a href="#sec-225">十、简答（8 分）</a></li></ul></li><li class="chap"><a href="#ch-226">附录：各章自测答案</a><ul><li><a href="#sec-227">L1 自测</a></li><li><a href="#sec-228">L2 自测</a></li><li><a href="#sec-229">L3 自测</a></li><li><a href="#sec-230">L4 自测</a></li><li><a href="#sec-231">L5 自测</a></li></ul></li><li class="chap"><a href="#ch-232">附录：带传动与链传动（L6 内容，超出 L1–L5，仅供参考）</a><ul><li><a href="#sec-233">1 带传动</a></li><li><a href="#sec-240">2 链传动</a></li><li><a href="#sec-246">3 三种传动对比（L3 已给，背这张表）</a></li></ul></li></ul></nav>
+<div class="navtitle">目录</div><nav aria-label="章节目录"><ul class="toc"><li class="chap"><a href="#ch-1">使用说明：按官方课件 L1–L5 组织的复习资料</a><ul><li><a href="#sec-2">0 这份材料是什么</a></li><li><a href="#sec-3">1 L1–L5 与文件的对应</a></li><li><a href="#sec-4">1.1 符号约定（全文档统一，先看这张表）</a></li><li><a href="#sec-5">2 三条主线（先建立框架，再背细节）</a></li><li><a href="#sec-6">3 四天计划（每天 4–5 小时）</a></li><li><a href="#sec-12">4 考试技巧（能多拿 10–15 分）</a></li><li><a href="#sec-13">5 常见问题</a></li></ul></li><li class="chap"><a href="#ch-14">L1 机构学基础与四杆机构</a><ul><li><a href="#sec-15">0 课件页码 → 本节</a></li><li><a href="#sec-17">1 机构、构件、运动副、运动简图</a></li><li><a href="#sec-22">2 自由度：Gruebler–Kutzbach 公式</a></li><li><a href="#sec-29">3 传动角与死点：力能不能传过去</a></li><li><a href="#sec-35">4 平面机构与空间机构</a></li><li><a href="#sec-36">5 Grashof 判据与四种基本型式</a></li><li><a href="#sec-42">6 分析与综合（analysis vs synthesis）</a></li><li><a href="#sec-43">7 图解法综合（L1 后半 + L2 前半）</a></li><li><a href="#sec-48">8 解析综合的数学准备（为 L2 铺垫）</a></li><li><a href="#sec-51">9 这一讲可以"带过"的内容</a></li><li><a href="#sec-52">10 易错点清单</a></li><li><a href="#sec-53">11 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-54">L2 四杆机构的分析与综合</a><ul><li><a href="#sec-55">0 课件页码 → 本节</a></li><li><a href="#sec-57">1 位置分析：为什么"有两个解"</a></li><li><a href="#sec-62">2 速度分析</a></li><li><a href="#sec-66">3 加速度分析（知道方法即可）</a></li><li><a href="#sec-67">4 图解法综合（要点回顾）</a></li><li><a href="#sec-71">5 解析法综合：标准二元组（dyad）</a></li><li><a href="#sec-79">6 MATLAB 写法（照抄即可）</a></li><li><a href="#sec-80">7 四种计算框架（这一页是"方法论"，简答常考）</a></li><li><a href="#sec-81">8 你的作业（轨迹综合）怎么讲</a></li><li><a href="#sec-85">9 补充：函数生成与 Freudenstein 方程</a></li><li><a href="#sec-86">10 易错点清单</a></li><li><a href="#sec-87">11 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-88">L3 电机与传动（Transmission, Gears, and Belts）</a><ul><li><a href="#sec-89">0 课件页码 → 本节</a></li><li><a href="#sec-91">1 为什么需要传动</a></li><li><a href="#sec-92">2 直流电机模型（本讲的地基）</a></li><li><a href="#sec-101">3 传动比与电机选型</a></li><li><a href="#sec-106">4 齿轮传动类型</a></li><li><a href="#sec-108">5 渐开线与齿轮几何</a></li><li><a href="#sec-117">6 轮系</a></li><li><a href="#sec-123">7 行星（周转）轮系</a></li><li><a href="#sec-129">8 谐波减速器</a></li><li><a href="#sec-130">9 CVT（无级变速）</a></li><li><a href="#sec-131">10 带与链（课件 86–90 页）</a></li><li><a href="#sec-135">11 易错点清单</a></li><li><a href="#sec-136">12 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-137">L4 设计流程、材料与齿轮几何设计</a><ul><li><a href="#sec-138">0 课件页码 → 本节</a></li><li><a href="#sec-140">1 设计流程</a></li><li><a href="#sec-146">2 材料选择</a></li><li><a href="#sec-155">3 齿轮几何设计</a></li><li><a href="#sec-163">4 易错点清单</a></li><li><a href="#sec-164">5 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-165">L5 齿轮受力与强度</a><ul><li><a href="#sec-166">0 课件页码 → 本节</a></li><li><a href="#sec-168">1 齿面受力</a></li><li><a href="#sec-174">2 失效模式</a></li><li><a href="#sec-179">3 弯曲强度：Lewis 公式</a></li><li><a href="#sec-186">4 接触强度（齿面点蚀）</a></li><li><a href="#sec-190">5 AGMA 方法（不考，但要"知道有它"）</a></li><li><a href="#sec-191">6 设计准则：先弯还是先接？</a></li><li><a href="#sec-192">7 与 L4 的衔接</a></li><li><a href="#sec-193">8 易错点清单</a></li><li><a href="#sec-194">9 自测（5 分钟）</a></li></ul></li><li class="chap"><a href="#ch-195">公式速查卡（按 L1–L5 排列，考前 30 分钟看这一份）</a><ul><li><a href="#sec-196">L1 机构与四杆基础</a></li><li><a href="#sec-197">L2 四杆分析与综合</a></li><li><a href="#sec-198">L3 电机与传动</a></li><li><a href="#sec-199">L4 设计流程、材料、齿轮几何</a></li><li><a href="#sec-200">L5 齿轮受力与强度</a></li><li><a href="#sec-201">常用数值与常数</a></li><li><a href="#sec-202">中英术语对照（英文卷必备）</a></li><li><a href="#sec-203">考场时间分配（100 分钟）</a></li></ul></li><li class="chap"><a href="#ch-204">模拟卷（L1–L5，100 分 / 100 分钟）</a><ul><li><a href="#sec-205">一、自由度与机构基础（8 分）</a></li><li><a href="#sec-206">二、四杆机构：类型、急回、传动角（12 分）</a></li><li><a href="#sec-207">三、位置与速度分析（10 分）</a></li><li><a href="#sec-208">四、图解法综合（10 分）</a></li><li><a href="#sec-209">五、直流电机与传动（10 分）</a></li><li><a href="#sec-210">六、齿轮几何与轮系（12 分）</a></li><li><a href="#sec-211">七、行星轮系与谐波（10 分）</a></li><li><a href="#sec-212">八、齿轮受力与弯曲强度（12 分）</a></li><li><a href="#sec-213">九、设计流程与材料（8 分）</a></li><li><a href="#sec-214">十、简答（8 分，每题 2 分）</a></li></ul></li><li class="chap"><a href="#ch-215">模拟卷答案与评分要点</a><ul><li><a href="#sec-216">一、自由度与机构基础（8 分）</a></li><li><a href="#sec-217">二、四杆机构：类型、急回、传动角（12 分）</a></li><li><a href="#sec-218">三、位置与速度分析（10 分）</a></li><li><a href="#sec-219">四、图解法综合（10 分）</a></li><li><a href="#sec-220">五、直流电机与传动（10 分）</a></li><li><a href="#sec-221">六、齿轮几何与轮系（12 分）</a></li><li><a href="#sec-222">七、行星轮系与谐波（10 分）</a></li><li><a href="#sec-223">八、齿轮受力与弯曲强度（12 分）</a></li><li><a href="#sec-224">九、设计流程与材料（8 分）</a></li><li><a href="#sec-225">十、简答（8 分）</a></li></ul></li><li class="chap"><a href="#ch-226">附录：各章自测答案</a><ul><li><a href="#sec-227">L1 自测</a></li><li><a href="#sec-228">L2 自测</a></li><li><a href="#sec-229">L3 自测</a></li><li><a href="#sec-230">L4 自测</a></li><li><a href="#sec-231">L5 自测</a></li></ul></li><li class="chap"><a href="#ch-232">附录：带传动与链传动（L6 内容，超出 L1–L5，仅供参考）</a><ul><li><a href="#sec-233">1 带传动</a></li><li><a href="#sec-240">2 链传动</a></li><li><a href="#sec-246">3 三种传动对比（L3 已给，背这张表）</a></li></ul></li></ul></nav>
 </aside>
 <main class="content">
 <section class="chapter" id="ch-1">
 <h1>使用说明：按官方课件 L1–L5 组织的复习资料</h1>
 <h2 id="sec-2">0 这份材料是什么</h2>
-<ul><li><strong>依据</strong>：官方课件 <code>官方课件/L1…L5</code>（杨李老师 Week 1–5，共 5 讲）+ 2023 期末卷题型。</li><li><strong>不依据</strong>：<code>reference_books</code> 里的 7 本大部头（几百 MB，只作背景，没有逐页读）。凡是课本原式，都在课件给出过的地方标注了出处（Shigley 第 13、14 章，Norton 第 2–5 章）。</li><li><strong>标注约定</strong>（全书统一）：</li></ul>
+<ul><li><strong>依据</strong>：课程官方课件 L1–L5（杨李老师 Week 1–5，共 5 讲）+ 2023 期末卷题型。</li><li><strong>不依据</strong>：<code>reference_books</code> 里的 7 本大部头（几百 MB，只作背景，没有逐页读）。凡是课本原式，都在课件给出过的地方标注了出处（Shigley 第 13、14 章，Norton 第 2–5 章）。</li><li><strong>标注约定</strong>（全书统一）：</li></ul>
 <div class="tablewrap"><table><thead><tr><th>标注</th><th>含义</th></tr></thead><tbody><tr><td>【课件】</td><td>课件原文/原公式，考试按这个答</td></tr><tr><td>【补充】</td><td>课件没写、但国内教材/期末题会用到的标准结论（已单独标出，可自行取舍）</td></tr><tr><td>【坑】【考点】</td><td>根据 2023 期末卷和常见错误加的提醒</td></tr></tbody></table></div>
-<ul><li><strong>例子原则</strong>：例子只保留"能说明公式怎么用"的最小版本，重点在概念、公式、推导链条。</li><li><strong>插图</strong>：正文直接嵌入了 L1–L5 课件里的关键图（约 50 张：构件/运动副、四杆极限位置、中垂线作图、电机特性与数据表、渐开线与压力角、轮系与行星、材料族与零件、齿轮受力与 Lewis 模型……），图注里标了出自哪一讲。<strong>不用再翻 PPT 找图</strong>；原图都在 <code>figs/ppt/</code>，已压缩到适合网页的尺寸。</li></ul>
+<ul><li><strong>例子原则</strong>：例子只保留"能说明公式怎么用"的最小版本，重点在概念、公式、推导链条。</li><li><strong>插图</strong>：正文直接嵌入了 L1–L5 课件里的关键图（约 50 张：构件/运动副、四杆极限位置、中垂线作图、电机特性与数据表、渐开线与压力角、轮系与行星、材料族与零件、齿轮受力与 Lewis 模型……），图注里标了出自哪一讲。<strong>不用再翻 PPT 找图</strong>；原图都在 <code>assets/figs/ppt/</code>，已压缩到适合网页的尺寸。</li></ul>
 <h2 id="sec-3">1 L1–L5 与文件的对应</h2>
-<div class="tablewrap"><table><thead><tr><th>课次</th><th>课件标题</th><th>主要内容</th><th>对应文件</th></tr></thead><tbody><tr><td><strong>L1</strong></td><td>Mechanism in general, 4-bar linkages</td><td>运动简图、自由度、传动角与死点、Grashof、类型与反演、图解/解析综合概览</td><td><code>01_L1_机构与四杆基础.md</code></td></tr><tr><td><strong>L2</strong></td><td>Design and analysis of a 4-bar linkage</td><td>位置/速度/加速度分析、图解法、二元组解析综合、计算框架、作业 2</td><td><code>02_L2_四杆分析与综合.md</code></td></tr><tr><td><strong>L3</strong></td><td>Motors and transmission</td><td>直流电机模型、功率效率、传动比、齿轮类型、渐开线与几何、轮系、行星、谐波、带与链</td><td><code>03_L3_电机与传动.md</code></td></tr><tr><td><strong>L4</strong></td><td>Gears, geometry design（+ 设计流程与材料）</td><td>设计流程、选材、强度与刚度、应力–应变、齿轮几何与设计步骤</td><td><code>04_L4_设计流程材料与齿轮几何.md</code></td></tr><tr><td><strong>L5</strong></td><td>Gears, force and stress</td><td>齿面受力、失效模式、Lewis 弯曲、$K_v$、Hertz 接触、AGMA 概览</td><td><code>05_L5_齿轮受力与强度.md</code></td></tr><tr><td>汇总</td><td>—</td><td>一页公式表（按 L1–L5 排）</td><td><code>06_公式速查.md</code></td></tr><tr><td>练习</td><td>—</td><td>100 分模拟卷（100 分钟）</td><td><code>07_模拟卷.md</code></td></tr><tr><td>练习</td><td>—</td><td>模拟卷答案 + 各章自测答案</td><td><code>08_模拟卷答案.md</code></td></tr><tr><td>附录</td><td>L6 内容</td><td>带/链设计（欧拉、包角、多边形效应）</td><td><code>09_附录_带与链.md</code></td></tr><tr><td>插图</td><td>—</td><td>从 L1–L5 课件提取的关键图（约 50 张）</td><td><code>figs/ppt/</code></td></tr></tbody></table></div>
-<p><code>index.html</code> 是全部内容的排版合并版，双击即可阅读；图与公式都已就位，<code>Ctrl+P</code> 可打印或存 PDF（打印前建议在浏览器里等公式渲染完）。</p>
+<div class="tablewrap"><table><thead><tr><th>课次</th><th>课件标题</th><th>主要内容</th><th>对应文件</th></tr></thead><tbody><tr><td><strong>L1</strong></td><td>Mechanism in general, 4-bar linkages</td><td>运动简图、自由度、传动角与死点、Grashof、类型与反演、图解/解析综合概览</td><td><code>src/content/01_L1_机构与四杆基础.md</code></td></tr><tr><td><strong>L2</strong></td><td>Design and analysis of a 4-bar linkage</td><td>位置/速度/加速度分析、图解法、二元组解析综合、计算框架、作业 2</td><td><code>src/content/02_L2_四杆分析与综合.md</code></td></tr><tr><td><strong>L3</strong></td><td>Motors and transmission</td><td>直流电机模型、功率效率、传动比、齿轮类型、渐开线与几何、轮系、行星、谐波、带与链</td><td><code>src/content/03_L3_电机与传动.md</code></td></tr><tr><td><strong>L4</strong></td><td>Gears, geometry design（+ 设计流程与材料）</td><td>设计流程、选材、强度与刚度、应力–应变、齿轮几何与设计步骤</td><td><code>src/content/04_L4_设计流程材料与齿轮几何.md</code></td></tr><tr><td><strong>L5</strong></td><td>Gears, force and stress</td><td>齿面受力、失效模式、Lewis 弯曲、$K_v$、Hertz 接触、AGMA 概览</td><td><code>src/content/05_L5_齿轮受力与强度.md</code></td></tr><tr><td>汇总</td><td>—</td><td>一页公式表（按 L1–L5 排）</td><td><code>src/content/06_公式速查.md</code></td></tr><tr><td>练习</td><td>—</td><td>100 分模拟卷（100 分钟）</td><td><code>src/content/07_模拟卷.md</code></td></tr><tr><td>练习</td><td>—</td><td>模拟卷答案 + 各章自测答案</td><td><code>src/content/08_模拟卷答案.md</code></td></tr><tr><td>附录</td><td>L6 内容</td><td>带/链设计（欧拉、包角、多边形效应）</td><td><code>src/content/09_附录_带与链.md</code></td></tr><tr><td>插图</td><td>—</td><td>从 L1–L5 课件提取的关键图（约 50 张）</td><td><code>assets/figs/ppt/</code></td></tr></tbody></table></div>
+<p><code>index.html</code> 是全部内容的排版合并版，双击即可阅读；图片和 MathJax 都在本地，断网也能正常显示公式；<code>Ctrl+P</code> 可打印或存 PDF（打印前建议在浏览器里等公式渲染完）。</p>
 <h2 id="sec-4">1.1 符号约定（全文档统一，先看这张表）</h2>
 <p>每章开头都有一张"<strong>符号表</strong>"，列出该章用到的全部符号。下面是<strong>跨章的全局约定</strong>——同一个字母在全文档只有一个含义；如果你看到不同写法，按这张表换算：</p>
 <div class="tablewrap"><table><thead><tr><th>量</th><th>本文写法</th><th>课件写法</th><th>国内教材写法</th></tr></thead><tbody><tr><td>构件数</td><td>$L$</td><td>$L$</td><td>$n$</td></tr><tr><td>四杆长度</td><td>$a,b,c,d$</td><td>$a,b,c,d$</td><td>$a,b,c,d$</td></tr><tr><td>Grashof 判据四长度</td><td>$\ell_{\min},\ell_{\max},\ell_p,\ell_q$</td><td>$s,l,p,q$</td><td>$l_{\min},l_{\max}$</td></tr><tr><td>自由度</td><td>$M$</td><td>$M$</td><td>$F$</td></tr><tr><td>传动角</td><td>$\mu$</td><td>$\mu$</td><td>$\gamma$</td></tr><tr><td>压力角</td><td>$\phi$</td><td>—</td><td>$\alpha$</td></tr><tr><td>行程速比系数</td><td>$K$</td><td>—</td><td>$K$</td></tr><tr><td>精确点 / 描点</td><td>$P_j$（复矢量 $P=W+Z$）</td><td>$PP_j$</td><td>—</td></tr><tr><td>二元组矢量</td><td>$W,Z$</td><td>$W,Z$</td><td>—</td></tr><tr><td>连杆转角增量</td><td>$\alpha_j$</td><td>$\alpha_j$</td><td>—</td></tr><tr><td>Freudenstein 系数</td><td>$k_1,k_2,k_3$</td><td>—</td><td>$K_1,K_2,K_3$</td></tr><tr><td>电枢电阻</td><td>$R_a$</td><td>$R$</td><td>$R_a$</td></tr><tr><td>转矩常数 / 反电动势常数</td><td>$K_T$ / $K_b$</td><td>$K_T$ / $K_b$</td><td>$K_T$ / $K_e$</td></tr><tr><td>传动比</td><td>$u$</td><td>$N$</td><td>$i$</td></tr><tr><td>齿数</td><td>$z$</td><td>$N$</td><td>$z$</td></tr><tr><td>模数 / 径节</td><td>$m$ / $P_d$</td><td>$m$ / $P$</td><td>$m$ / —</td></tr><tr><td>周节</td><td>$p_c$</td><td>$p$</td><td>$p$</td></tr><tr><td>分度圆 / 齿顶圆 / 齿根圆 / 基圆</td><td>$d$ / $d_a$ / $d_f$ / $d_b$</td><td>$d$ / $d_a$ / $d_f$ / $d_b$</td><td>同左</td></tr><tr><td>中心距</td><td>$a_w$</td><td>$C$</td><td>$a$</td></tr><tr><td>齿顶高 / 齿根高 / 顶隙</td><td>$h_a$ / $h_f$ / $h_c$</td><td>—</td><td>$h_a$ / $h_f$ / $c$</td></tr><tr><td>齿宽</td><td>$b_f$</td><td>$F$</td><td>$b$</td></tr><tr><td>切向 / 径向 / 法向载荷</td><td>$W_t$ / $W_r$ / $W_n$</td><td>$W_t$ / $W_r$ / $W_n$</td><td>$F_t$ / $F_r$ / $F_n$</td></tr><tr><td>齿面接触应力</td><td>$\sigma_C$</td><td>$\sigma_C$</td><td>$\sigma_H$</td></tr><tr><td>弹性系数</td><td>$Z_E$</td><td>$C_p$</td><td>$Z_E$</td></tr><tr><td>曲率半径</td><td>$\rho_1,\rho_2$</td><td>$r_1,r_2$</td><td>$\rho_1,\rho_2$</td></tr><tr><td>安全系数</td><td>$n_s$</td><td>$n$</td><td>$S$ / $n$</td></tr><tr><td>转速</td><td>$n$</td><td>$n$</td><td>$n$</td></tr></tbody></table></div>
@@ -124,9 +126,9 @@ footer{max-width:1180px;margin:0 auto;padding:0 28px 40px;color:#8b96a5;font-siz
 <ul><li>机构 = 传递运动/力的装置，<strong>至少有一个构件被固定</strong>（机架，ground/frame）。</li><li>机器的组成：<strong>机构 + 动力（电机）+ 控制/传感</strong>。所以这门课的顺序是：机构（L1–L2）→ 电机与传动（L3）→ 齿轮（L4–L5）。</li></ul>
 <h3 id="sec-19">1.2 构件（link）与运动副（joint）</h3>
 <ul><li><strong>构件 link</strong>：至少带两个运动副的刚体（rigid body with at least two joints）。一个构件可以是一个零件，也可以是几个零件固连在一起（如焊成一体）。</li><li><strong>运动副 joint /  kinematic pair</strong>：两构件之间的可动联接。</li><li>按接触形式分：<strong>低副（面接触）</strong>——转动副（revolute/pin）、移动副（prismatic/slider）；<strong>高副（点、线接触）</strong>——齿轮啮合、凸轮与从动件、滚子接触。</li><li>按自由度数分：<strong>J1</strong>（允许 1 个相对自由度）、<strong>J2</strong>（允许 2 个相对自由度，叫"半副"）。</li></ul>
-<p><img alt="图 L1-1 构件的类型：二副（binary）、三副（ternary）、四副（quaternary）构件及机构简图画法（L1 课件）" src="figs/ppt/L1_link_types.png"></p>
+<p><img alt="图 L1-1 构件的类型：二副（binary）、三副（ternary）、四副（quaternary）构件及机构简图画法（L1 课件）" src="assets/figs/ppt/L1_link_types.png"></p>
 <p><em>图 L1-1 构件的类型：二副（binary）、三副（ternary）、四副（quaternary）构件及机构简图画法（L1 课件）</em></p>
-<p><img alt="图 L1-2 运动副的类型与自由度：齿轮副、球面副、平面副、万向副（L1 课件）" src="figs/ppt/L1_joint_types.jpg"></p>
+<p><img alt="图 L1-2 运动副的类型与自由度：齿轮副、球面副、平面副、万向副（L1 课件）" src="assets/figs/ppt/L1_joint_types.jpg"></p>
 <p><em>图 L1-2 运动副的类型与自由度：齿轮副、球面副、平面副、万向副（L1 课件）</em></p>
 <h3 id="sec-20">1.3 运动简图（kinematic diagram）</h3>
 <p>【课件】"We draw kinematic diagrams to reduce mechanisms into a simpler form so we can analyze them."</p>
@@ -136,7 +138,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 28px 40px;color:#8b96a5;font-siz
 <h3 id="sec-21">1.4 四杆机构的术语（务必按这套记号）</h3>
 <div class="tablewrap"><table><thead><tr><th>符号</th><th>名称</th><th>说明</th></tr></thead><tbody><tr><td>1</td><td>机架 ground / frame</td><td><strong>永远标 1</strong></td></tr><tr><td>2</td><td>输入构件 input link（曲柄 crank 或摇杆 rocker）</td><td>未说明时取<strong>左边</strong>那根</td></tr><tr><td>3</td><td>连杆 coupler</td><td>不直接与机架相连，作平面运动</td></tr><tr><td>4</td><td>输出构件 follower（摇杆）</td><td>与机架相连的另一根</td></tr><tr><td>$a,b,c,d$</td><td>各杆长度</td><td>常用 $a=AB$（输入）、$b=BC$（连杆）、$c=CD$（输出）、$d=AD$（机架）</td></tr></tbody></table></div>
 <hr>
-<p><img alt="图 L1-3 四杆机构的四个构件：机架 1、输入 2、连杆 3、从动件 4（L1 课件）" src="figs/ppt/L1_fourbar_terms.png"></p>
+<p><img alt="图 L1-3 四杆机构的四个构件：机架 1、输入 2、连杆 3、从动件 4（L1 课件）" src="assets/figs/ppt/L1_fourbar_terms.png"></p>
 <p><em>图 L1-3 四杆机构的四个构件：机架 1、输入 2、连杆 3、从动件 4（L1 课件）</em></p>
 <h2 id="sec-22">2 自由度：Gruebler–Kutzbach 公式</h2>
 <h3 id="sec-23">2.1 公式与推导</h3>
@@ -160,7 +162,7 @@ footer{max-width:1180px;margin:0 auto;padding:0 28px 40px;color:#8b96a5;font-siz
 <p><strong>(b) 曲柄滑块机构</strong>：$L=4$（机架、曲柄、连杆、滑块），$J_1=4$（3 个转动副 + 1 个移动副）</p>
 <div class="mathblock">$$M=3(4-1)-2\times4=1$$</div>
 <p><strong>(c) 凸轮 + 滚子摆杆</strong>（三种假设，答案不同，<strong>必须先声明假设</strong>）</p>
-<p><img alt="图（自绘）凸轮-滚子摆杆的建模：机架 1、凸轮 2、摆杆 3、滚子 4；接触点 $D$ 的假设不同，$J_1/J_2$ 的记法就不同" src="figs/fig8_cam_follower.png"></p>
+<p><img alt="图（自绘）凸轮-滚子摆杆的建模：机架 1、凸轮 2、摆杆 3、滚子 4；接触点 $D$ 的假设不同，$J_1/J_2$ 的记法就不同" src="assets/figs/fig8_cam_follower.png"></p>
 <p><em>图（自绘）凸轮-滚子摆杆的建模：机架 1、凸轮 2、摆杆 3、滚子 4；接触点 $D$ 的假设不同，$J_1/J_2$ 的记法就不同</em></p>
 <div class="tablewrap"><table><thead><tr><th>假设</th><th>$L$</th><th>$J_1$</th><th>$J_2$</th><th>$M$</th></tr></thead><tbody><tr><td>滚子与凸轮纯滚动</td><td>4</td><td>4</td><td>0</td><td>1</td></tr><tr><td>从动件与输出焊成一体（凸轮副允许转+滑）</td><td>3</td><td>2</td><td>1</td><td>1</td></tr><tr><td>凸轮副允许转动 + 滑动（滚子可滑）</td><td>4</td><td>3</td><td>1</td><td>2（含 1 个冗余自由度）</td></tr></tbody></table></div>
 <blockquote><p>【说明】课件原话："On any cam and follower problems, state your assumptions!"——凸轮题不写假设，答案无法判对。</p></blockquote>
@@ -200,7 +202,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <h3 id="sec-32">3.3 死点与极限位置（toggle positions）</h3>
 <div class="tablewrap"><table><thead><tr><th>共线情况</th><th>现象</th><th>说明</th></tr></thead><tbody><tr><td>输入构件与连杆共线</td><td><strong>机械效益趋于无穷</strong></td><td>此时输出速度为零，输入再小的力也能顶住很大的负载；$\mu$ 不一定为 0</td></tr><tr><td>连杆与输出构件共线</td><td><strong>死点 / 变向点</strong>（change point）</td><td>$\mu=0$，力全部沿输出杆，无法产生转矩；从该位置出来时方向不确定</td></tr></tbody></table></div>
 <blockquote><p>【坑】"输入与连杆共线"和"连杆与输出共线"是<strong>两种不同的共线</strong>，结论完全不同：前者是"省力到极致"，后者是"动不了"。考试画图时一定要标出是哪两根杆共线。</p></blockquote>
-<p><img alt="图 L1-4 极限位置/死点：输入与连杆共线（或连杆与输出共线）时的位形（L1 课件）" src="figs/ppt/L1_toggle.png"></p>
+<p><img alt="图 L1-4 极限位置/死点：输入与连杆共线（或连杆与输出共线）时的位形（L1 课件）" src="assets/figs/ppt/L1_toggle.png"></p>
 <p><em>图 L1-4 极限位置/死点：输入与连杆共线（或连杆与输出共线）时的位形（L1 课件）</em></p>
 <h3 id="sec-33">3.4 例题：$\mu_{\min}$ 怎么算（这台机构后面反复用）</h3>
 <div class="mathblock">$$a=50,\quad b=120,\quad c=100,\quad d=130\ \text{mm}$$</div>
@@ -209,7 +211,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <ul><li>$BD=d-a=80$：$\cos\angle BCD=\dfrac{120^2+100^2-80^2}{2\times120\times100}=0.75$，$\angle BCD=41.41^\circ$；</li><li>$BD=d+a=180$：$\cos\angle BCD=-0.3333$，$\angle BCD=109.47^\circ$，取补角 $70.53^\circ$。</li></ul>
 <div class="mathblock">$$\mu_{\min}=41.41^\circ&gt;[\mu]=40^\circ\quad(\text{合格，但只是压线})$$</div>
 <blockquote><p>【说明】一般机械 $[\mu]\ge40^\circ$，高速重载 $[\mu]\ge50^\circ$。这题刚过线，属于"能用但不好"的设计——考试常让你判断"是否需要重新设计"，答案是要，措施是加长机架或调整杆长比。</p></blockquote>
-<p><img alt="四杆机构与传动角" src="figs/fig1_fourbar.png"></p>
+<p><img alt="四杆机构与传动角" src="assets/figs/fig1_fourbar.png"></p>
 <ul><li>左：$\theta=60^\circ$ 时的位形，$\varphi=89.6^\circ$（与 L2 §1.4 的位置分析结果一致），$\mu=61.4^\circ$；</li><li>右：传动角随曲柄转角的变化，在曲柄与机架共线处取到最小值 $\mu_{\min}=41.4^\circ$。</li></ul>
 <blockquote><p>【说明】画草图时只要画<strong>两个共线位置</strong>（$BD=d-a$ 与 $d+a$）就够了，$\mu_{\min}$ 必在这两处之一。</p></blockquote>
 <h3 id="sec-34">3.5 机械效益（mechanical advantage）</h3>
@@ -240,7 +242,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <h3 id="sec-38">5.2 判定流程（30 秒）</h3>
 <ol><li>四个长度排序，找出 $\ell_{\min}$ 和 $\ell_{\max}$；</li><li>算 $\ell_{\min}+\ell_{\max}$ 与 $\ell_p+\ell_q$ 比较；</li><li>若满足 Grashof，再看<strong>最短杆坐哪把交椅</strong>：</li></ol>
 <div class="tablewrap"><table><thead><tr><th>最短杆是</th><th>机构类型</th><th>英文</th></tr></thead><tbody><tr><td>连架杆（与机架相连）</td><td><strong>曲柄摇杆</strong></td><td>crank-rocker</td></tr><tr><td>机架</td><td><strong>双曲柄</strong>（拖动机构）</td><td>double-crank / drag-link</td></tr><tr><td>连杆</td><td><strong>双摇杆</strong></td><td>double-rocker</td></tr></tbody></table></div>
-<p><img alt="图 L1-5 曲柄摇杆机构：输入曲柄整周回转，从动摇杆往复摆动（虚线为极限位置的圆弧）（L1 课件）" src="figs/ppt/L1_crank_rocker.png"></p>
+<p><img alt="图 L1-5 曲柄摇杆机构：输入曲柄整周回转，从动摇杆往复摆动（虚线为极限位置的圆弧）（L1 课件）" src="assets/figs/ppt/L1_crank_rocker.png"></p>
 <p><em>图 L1-5 曲柄摇杆机构：输入曲柄整周回转，从动摇杆往复摆动（虚线为极限位置的圆弧）（L1 课件）</em></p>
 <blockquote><p>【坑 1】题目只说"四杆长度"，必须说明"以哪根为机架"，否则类型不唯一。</p><p>【坑 2】不满足 Grashof 时，无论最短杆在哪，都是<strong>双摇杆</strong>。</p></blockquote>
 <h3 id="sec-39">5.3 反演（kinematic inversion）</h3>
@@ -248,7 +250,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <ul><li>换一个构件当机架，<strong>相对运动规律不变</strong>，但<strong>绝对运动（轨迹、摆角、行程）改变</strong>；</li><li>同一副四杆可以反演出：曲柄摇杆、双曲柄、双摇杆、曲柄摇杆 #2；</li><li>曲柄滑块、导杆机构、摇块机构、定块机构都是四杆的<strong>演化</strong>（改变杆长或取不同构件为机架），不是新机构。</li></ul>
 <h3 id="sec-40">5.4 变向点与平行四边形（课件 51–54 页）</h3>
 <ul><li>$\ell_{\min}+\ell_{\max}=\ell_p+\ell_q$ 时，机构经过"变向点"（change point）时<strong>装配形式不确定</strong>，可能翻到另一支路（折叠位置）。</li><li><strong>平行四边形机构</strong>：两连架杆等长、连杆与机架等长 → 连杆始终平行于机架，两连架杆同步整周回转。</li><li><strong>反平行四边形（anti-parallelogram）</strong>：经过变向点后翻到交叉装配，是典型的变向点机构，工程上要靠错列相位或加惯性/辅助杆来避免。</li></ul>
-<p><img alt="图 L1-6 平行四边形与反平行四边形：经过变向点后翻到交叉装配（L1 课件）" src="figs/ppt/L1_antiparallelogram.jpg"></p>
+<p><img alt="图 L1-6 平行四边形与反平行四边形：经过变向点后翻到交叉装配（L1 课件）" src="assets/figs/ppt/L1_antiparallelogram.jpg"></p>
 <p><em>图 L1-6 平行四边形与反平行四边形：经过变向点后翻到交叉装配（L1 课件）</em></p>
 <h3 id="sec-41">5.5 例题</h3>
 <div class="mathblock">$$1.0,\ 2.4,\ 2.4,\ 3.4\ \text{m}$$</div>
@@ -273,7 +275,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <p>3 个不共线点唯一确定一个圆，所以：</p>
 <ol><li>作 $A_1A_2$、$A_1A_3$ 的中垂线，<strong>交点</strong>即 $A_0$；</li><li>对 $B$ 点同样操作得 $B_0$；</li><li>连 $A_1A_0$、$B_1B_0$ 得机构。</li></ol>
 <blockquote><p>【说明】作图题要<strong>保留作图线</strong>（课件原话：show your work, do not erase your construction lines），并把 $A_0,B_0$ 落在题目给的"机架允许区域"内。</p></blockquote>
-<p><img alt="图 L1-7 刚体导引的三个位置：机架铰必须落在允许的机身区域内（L1/L2 课件，期末 Q4 同类题）" src="figs/ppt/L1_three_positions.jpg"></p>
+<p><img alt="图 L1-7 刚体导引的三个位置：机架铰必须落在允许的机身区域内（L1/L2 课件，期末 Q4 同类题）" src="assets/figs/ppt/L1_three_positions.jpg"></p>
 <p><em>图 L1-7 刚体导引的三个位置：机架铰必须落在允许的机身区域内（L1/L2 课件，期末 Q4 同类题）</em></p>
 <h3 id="sec-46">7.3 自由选择数（考点）</h3>
 <div class="tablewrap"><table><thead><tr><th>给定位置数</th><th>每侧自由选择</th><th>总数</th><th>来源</th></tr></thead><tbody><tr><td>2 个位置</td><td>3</td><td>6</td><td>动铰坐标 $(x,y)$ 2 个 + 固定铰在中垂线上的位置 1 个</td></tr><tr><td>3 个位置</td><td>2</td><td>4</td><td>动铰坐标 $(x,y)$ 2 个</td></tr></tbody></table></div>
@@ -286,7 +288,7 @@ F_r=F\cos\mu\quad(\text{沿摇杆的径向分量，不做功})$$</div>
 <div class="mathblock">$$e^{i\theta}=\cos\theta+i\sin\theta\quad(\text{Euler 公式})$$</div>
 <p>向量 $\vec W=w\,e^{i\phi}$；<strong>乘 $e^{i\beta}$ 等于逆时针转 $\beta$</strong>：</p>
 <div class="mathblock">$$\vec W_j=w\,e^{i(\phi+\beta_j)}=\vec W\,e^{i\beta_j}$$</div>
-<p><img alt="图 L1-8 乘 $e^{i\beta}$ 等于把向量逆时针转 $\beta$（L1 课件）" src="figs/ppt/L1_vector_rotate.png"></p>
+<p><img alt="图 L1-8 乘 $e^{i\beta}$ 等于把向量逆时针转 $\beta$（L1 课件）" src="assets/figs/ppt/L1_vector_rotate.png"></p>
 <p><em>图 L1-8 乘 $e^{i\beta}$ 等于把向量逆时针转 $\beta$（L1 课件）</em></p>
 <h3 id="sec-50">8.2 Cramer 法则</h3>
 <div class="mathblock">$$\begin{vmatrix}a&amp;b\\c&amp;d\end{vmatrix}=ad-bc$$</div>
@@ -322,7 +324,7 @@ x=\frac{ed-bf}{ad-bc},\quad y=\frac{af-ec}{ad-bc}$$</div>
 <p>以 $A$ 为原点，四杆闭环 $A\to B\to C\to D\to A$：</p>
 <div class="mathblock">$$a\,e^{i\theta}+b\,e^{i\psi}=d+c\,e^{i\varphi}$$</div>
 <ul><li>$a=AB$（输入杆），$b=BC$（连杆），$c=CD$（输出杆），$d=AD$（机架）；</li><li>$\theta$ 输入角（已知），$\psi$ 连杆方位角，$\varphi$ 输出角。</li></ul>
-<p><img alt="三个角度的定义" src="figs/fig9_angles.png"></p>
+<p><img alt="三个角度的定义" src="assets/figs/fig9_angles.png"></p>
 <p><em>图（自绘）四杆机构的三个方位角：$\theta$、$\psi$、$\varphi$，都从 $+x$ 方向起、逆时针为正</em></p>
 <p><strong>三个角的确切定义</strong>（坐标约定：$A$ 为原点，$A\to D$ 沿 $+x$，故 $D=(d,0)$）：</p>
 <div class="tablewrap"><table><thead><tr><th>角</th><th>名称</th><th>定义</th><th>对应向量</th></tr></thead><tbody><tr><td>$\theta$</td><td>输入角（曲柄转角）</td><td>$AB$ 的方位角</td><td>$\vec{AB}=a\,e^{i\theta}$</td></tr><tr><td>$\psi$</td><td><strong>连杆方位角</strong>（coupler angle）</td><td><strong>从 $B$ 指向 $C$</strong> 的方位角</td><td>$\vec{BC}=b\,e^{i\psi}$</td></tr><tr><td>$\varphi$</td><td><strong>输出角</strong>（follower angle）</td><td><strong>从 $D$ 指向 $C$</strong> 的方位角</td><td>$\vec{DC}=c\,e^{i\varphi}$</td></tr></tbody></table></div>
@@ -338,7 +340,7 @@ x=\frac{ed-bf}{ad-bc},\quad y=\frac{af-ec}{ad-bc}$$</div>
 <p>给定 $\theta$ 后，$C$ 点必须同时满足两个长度约束：</p>
 <div class="mathblock">$$|BC|=b,\qquad |DC|=c$$</div>
 <p>所以 $C$ 是"以 $B$ 为圆心、$b$ 为半径的圆"与"以 $D$ 为圆心、$c$ 为半径的圆"的交点——两圆一般有<strong>两个交点</strong>，就是<strong>两条装配支路</strong>（assembly modes）。</p>
-<p><img alt="两条装配支路" src="figs/fig11_branches.png"></p>
+<p><img alt="两条装配支路" src="assets/figs/fig11_branches.png"></p>
 <p><em>图（自绘）同一 $\theta$ 下的两个 $C$ 解：$C_1$（实线）与 $C_2$（虚线），两解关于直线 $BD$ 镜像</em></p>
 <p>形式化的判别式：令</p>
 <div class="mathblock">$$\vec u=\vec{BD}=\vec{OD}-\vec{OB},\qquad \vec v=\vec{BC}$$</div>
@@ -419,26 +421,26 @@ v_C=\omega_4 c=300.2\ \text{mm/s}$$</div>
 <p>详细作法见 L1 §7，这里只记"考试怎么写步骤"：</p>
 <h3 id="sec-68">4.1 两个位置</h3>
 <ol><li>连 $A_1A_2$，作中垂线，在其上任取 $A_0$；</li><li>同法得 $B_0$；</li><li>连 $A_1A_0$、$B_1B_0$ 即为两连架杆；$A_1B_1$ 为连杆。</li></ol>
-<p><img alt="图 L2-1 两个位置的中垂线（PB）作图法：固定铰可在中垂线上任取（L2 课件）" src="figs/ppt/L2_pb_2pt.png"></p>
+<p><img alt="图 L2-1 两个位置的中垂线（PB）作图法：固定铰可在中垂线上任取（L2 课件）" src="assets/figs/ppt/L2_pb_2pt.png"></p>
 <p><em>图 L2-1 两个位置的中垂线（PB）作图法：固定铰可在中垂线上任取（L2 课件）</em></p>
 <h3 id="sec-69">4.2 三个位置</h3>
 <ol><li>作 $A_1A_2$、$A_1A_3$ 的两条中垂线，<strong>交点</strong> = $A_0$；</li><li>作 $B_1B_2$、$B_1B_3$ 的两条中垂线，交点 = $B_0$；</li><li>连 $A_1A_0$、$B_1B_0$；</li><li>检查 $A_0,B_0$ 是否落在题目规定区域（如"机架内"），不合格就重选动铰位置。</li></ol>
 <h3 id="sec-70">4.3 必须写进卷子的三句话</h3>
 <ul><li>圆点（circle point）绕圆心点（center point）作圆弧运动，所以中垂线过圆心；</li><li>两个位置时固定铰可沿中垂线任取（1 个自由选择/侧）；三个位置时交点唯一（只剩动铰的 2 个自由选择/侧）；</li><li>保留作图线，标注 $A_1,A_2,A_3,B_1,B_2,B_3,A_0,B_0$。</li></ul>
 <hr>
-<p><img alt="图 L2-2 三个位置：两条中垂线的交点即固定铰，两交点的连线对应动铰的三个位置（L2 课件）" src="figs/ppt/L2_pb_terminology.png"></p>
+<p><img alt="图 L2-2 三个位置：两条中垂线的交点即固定铰，两交点的连线对应动铰的三个位置（L2 课件）" src="assets/figs/ppt/L2_pb_terminology.png"></p>
 <p><em>图 L2-2 三个位置：两条中垂线的交点即固定铰，两交点的连线对应动铰的三个位置（L2 课件）</em></p>
 <h2 id="sec-71">5 解析法综合：标准二元组（dyad）</h2>
 <h3 id="sec-72">5.1 为什么叫"二元组"</h3>
 <p>一个四杆机构可以看成<strong>两个二元组</strong>：$\vec W_A+\vec Z_A$ 与 $\vec W_B+\vec Z_B$。</p>
 <ul><li>$\vec W$：从固定铰指向动铰的向量（连架杆）；</li><li>$\vec Z$：从动铰指向连杆上精确点 $P$ 的向量；</li><li>两个 $\vec Z$ <strong>刚性固连</strong>，一起构成连杆。</li></ul>
 <p>只要每个二元组都能让点 $P$ 到达各精确点并满足姿态，拼起来的四杆当然也能。</p>
-<p><img alt="图 L2-3 一个四杆机构由两个二元组（$W+Z$）拼成：两个 $Z$ 刚性固连成连杆（L2 课件）" src="figs/ppt/L1_dyad_bars.png"></p>
+<p><img alt="图 L2-3 一个四杆机构由两个二元组（$W+Z$）拼成：两个 $Z$ 刚性固连成连杆（L2 课件）" src="assets/figs/ppt/L1_dyad_bars.png"></p>
 <p><em>图 L2-3 一个四杆机构由两个二元组（$W+Z$）拼成：两个 $Z$ 刚性固连成连杆（L2 课件）</em></p>
 <h3 id="sec-73">5.2 参数化</h3>
 <p><strong>先弄清 $P$ 是什么：</strong> $P$ 是<strong>连杆上的一个材料点</strong>（coupler point），不是铰点。综合问题的原始要求就是"连杆上这个点要走过的若干位置 $+$ 连杆在那些位置的姿态"，所以 $P$ 的坐标是<strong>题目给的</strong>（量出来或直接给定），不是算出来的；要算的未知量是 $W$ 和 $Z$。</p>
 <p>课件把它叫 <strong>precision point（精确点）</strong>，第 $j$ 个位置记作 $PP_j$，所以 $PP_1\equiv P_1$。</p>
-<p><img alt="二元组与精确点" src="figs/fig10_dyad.png"></p>
+<p><img alt="二元组与精确点" src="assets/figs/fig10_dyad.png"></p>
 <p><em>图（自绘）一个二元组 $A_0\!-\!A_1\!-\!P$：$W$ 是连架杆，$Z$ 是"动铰 $\to$ 精确点"的描点臂；位置 2 由 $W$、$Z$ 各自转过 $\beta_2$、$\alpha_2$ 得到</em></p>
 <div class="mathblock">$$P=W+Z,\qquad W=|W|\,e^{i\angle W},\quad Z=|Z|\,e^{i\angle Z}$$</div>
 <p>第 $j$ 个位置（$P_j$ 为精确点，$\alpha_j$ 为连杆转角增量）：</p>
@@ -447,7 +449,7 @@ v_C=\omega_4 c=300.2\ \text{mm/s}$$</div>
 <p>两式相减（消去 $P_1$）：</p>
 <div class="mathblock">$$\boxed{\ W\left(e^{i\beta_j}-1\right)+Z\left(e^{i\alpha_j}-1\right)=\delta_j\ }$$</div>
 <div class="mathblock">$$\delta_j=P_j-P_1,\qquad \alpha_j=\theta_j-\theta_1$$</div>
-<p><img alt="图 L2-4 三位姿的标准二元组方程：$W(e^{i\beta_j}-1)+Z(e^{i\alpha_j}-1)=\delta_j$（L2 课件）" src="figs/ppt/L2_dyad_eq.png"></p>
+<p><img alt="图 L2-4 三位姿的标准二元组方程：$W(e^{i\beta_j}-1)+Z(e^{i\alpha_j}-1)=\delta_j$（L2 课件）" src="assets/figs/ppt/L2_dyad_eq.png"></p>
 <p><em>图 L2-4 三位姿的标准二元组方程：$W(e^{i\beta_j}-1)+Z(e^{i\alpha_j}-1)=\delta_j$（L2 课件）</em></p>
 <h3 id="sec-74">5.3 三个精确点：方程数与自由选择</h3>
 <div class="tablewrap"><table><thead><tr><th>量</th><th>个数</th></tr></thead><tbody><tr><td>未知数 $W$（复数 2）+ $Z$（复数 2）+ $\beta_2,\beta_3$</td><td><strong>6</strong></td></tr><tr><td>方程（$j=2,3$，每个复数方程 = 2 个实方程）</td><td><strong>4</strong></td></tr><tr><td>自由选择</td><td><strong>2</strong></td></tr></tbody></table></div>
@@ -473,7 +475,7 @@ Z=\frac{1}{\Delta}\begin{vmatrix}
 e^{i\beta_2}-1 &amp; \delta_2\\
 e^{i\beta_3}-1 &amp; \delta_3
 \end{vmatrix}$$</div>
-<p><img alt="图 L2-5 用 Cramer 法则解出 $W$、$Z$ 的矩阵形式（L2 课件）" src="figs/ppt/L2_cramer.png"></p>
+<p><img alt="图 L2-5 用 Cramer 法则解出 $W$、$Z$ 的矩阵形式（L2 课件）" src="assets/figs/ppt/L2_cramer.png"></p>
 <p><em>图 L2-5 用 Cramer 法则解出 $W$、$Z$ 的矩阵形式（L2 课件）</em></p>
 <h3 id="sec-76">5.5 从 $W,Z$ 回到铰点</h3>
 <div class="mathblock">$$A_1=PP_1-Z,\qquad A_0=A_1-W$$</div>
@@ -580,7 +582,7 @@ b=\sqrt{a^2+c^2+d^2-2ack_3}$$</div>
 <div class="mathblock">$$P_{in}\ \longrightarrow\ \boxed{\text{Transmission}}\ \longrightarrow\ P_{out},\qquad P_{out}=P_{in}-\text{losses}$$</div>
 <ul><li>机械功率 $P=T\omega$；理想传动<strong>功率不变</strong>，所以转矩与转速成反比；</li><li>实际传动有摩擦、打滑、发热，效率 $\eta&lt;1$，这就是"用传动的代价"。</li></ul>
 <hr>
-<p><img alt="图 L3-1 发动机→离合器→变速器→传动轴→差速器→车轮：转速与转矩要经过传动才能匹配（L3 课件）" src="figs/ppt/L3_driveline.jpg"></p>
+<p><img alt="图 L3-1 发动机→离合器→变速器→传动轴→差速器→车轮：转速与转矩要经过传动才能匹配（L3 课件）" src="assets/figs/ppt/L3_driveline.jpg"></p>
 <p><em>图 L3-1 发动机→离合器→变速器→传动轴→差速器→车轮：转速与转矩要经过传动才能匹配（L3 课件）</em></p>
 <h2 id="sec-92">2 直流电机模型（本讲的地基）</h2>
 <h3 id="sec-93">2.1 三个基本关系</h3>
@@ -595,7 +597,7 @@ V_s=E+I R_a\quad(\text{电枢回路})$$</div>
 <div class="mathblock">$$\boxed{\ T_m=T_s\left(1-\frac{\omega}{\omega_0}\right)\ }$$</div>
 <div class="tablewrap"><table><thead><tr><th>特征点</th><th>表达式</th><th>含义</th></tr></thead><tbody><tr><td>堵转转矩（stall torque）</td><td>$T_s=\dfrac{V_sK_T}{R_a}$</td><td>$\omega=0$，启动瞬间</td></tr><tr><td>空载转速（no-load speed）</td><td>$\omega_0=\dfrac{V_s}{K_b}$</td><td>$T=0$</td></tr><tr><td>斜率</td><td>$-\dfrac{K_TK_b}{R_a}$</td><td>由电机本体决定，<strong>与电压无关</strong></td></tr><tr><td>堵转电流</td><td>$I_s=\dfrac{V_s}{R_a}$</td><td>只由电阻决定，通常是额定电流的数倍</td></tr></tbody></table></div>
 <blockquote><p>【说明】升压时整条直线<strong>平行右移</strong>（斜率不变）；所以"调压调速"改变的是空载转速，不改变电机的"硬度"。</p></blockquote>
-<p><img alt="图 L3-2 电机 $T-\omega$ 直线、功率 $P=T\omega$ 抛物线与负载线的交点（课件手绘原图）" src="figs/ppt/L3_motor_curve.png"></p>
+<p><img alt="图 L3-2 电机 $T-\omega$ 直线、功率 $P=T\omega$ 抛物线与负载线的交点（课件手绘原图）" src="assets/figs/ppt/L3_motor_curve.png"></p>
 <p><em>图 L3-2 电机 $T-\omega$ 直线、功率 $P=T\omega$ 抛物线与负载线的交点（课件手绘原图）</em></p>
 <h3 id="sec-95">2.3 功率、效率、最大功率点</h3>
 <div class="mathblock">$$P_{out}=T\omega,\qquad P_{in}=V_sI,\qquad \eta=\frac{P_{out}}{P_{in}}$$</div>
@@ -606,13 +608,13 @@ V_s=E+I R_a\quad(\text{电枢回路})$$</div>
 <div class="mathblock">$$\omega=\frac{\omega_0}{2},\qquad T=\frac{T_s}{2},\qquad
 P_{\max}=\frac{T_s\omega_0}{4}=\frac{V_s^2}{4R_a}$$</div>
 <p>此处效率只有 50%，所以"最大功率点"≠"最高效率点"。</p>
-<p><img alt="图 L3-3 效率曲线：$\eta=P_{out}/P_{in}=\omega/\omega_0$，高速段效率高、低速大转矩段效率低（课件手绘原图）" src="figs/ppt/L3_efficiency.png"></p>
+<p><img alt="图 L3-3 效率曲线：$\eta=P_{out}/P_{in}=\omega/\omega_0$，高速段效率高、低速大转矩段效率低（课件手绘原图）" src="assets/figs/ppt/L3_efficiency.png"></p>
 <p><em>图 L3-3 效率曲线：$\eta=P_{out}/P_{in}=\omega/\omega_0$，高速段效率高、低速大转矩段效率低（课件手绘原图）</em></p>
 <h3 id="sec-96">2.4 极限在哪里（课件 17–18 页）</h3>
 <div class="tablewrap"><table><thead><tr><th>限制</th><th>后果</th></tr></thead><tbody><tr><td>电流过大</td><td>绕组过热、绝缘损坏（电气烧毁）</td></tr><tr><td>转速过高</td><td>轴承损坏、电刷打火、振动、离心力（导线甩出）</td></tr><tr><td>长时间堵转</td><td>$I^2R_a$ 全部发热，几分钟就烧</td></tr></tbody></table></div>
 <h3 id="sec-97">2.5 例题：电机 118701 + 负载线（课件 15 页原题）</h3>
 <p>maxon RE16 数据表（12 V 那一列）：$n_0=7130$ rpm，$T_s=18.6$ mNm，$R_a=10.3\ \Omega$，$K_T=16$ mNm/A，转速常数 597 rpm/V，额定 5.48 mNm / 5030 rpm。</p>
-<p><img alt="图 L3-4 maxon RE16 数据表（118701 那一列：12 V、7130 rpm、18.6 mNm、10.3 Ω、16 mNm/A）（L3 课件）" src="figs/ppt/L3_datasheet.jpg"></p>
+<p><img alt="图 L3-4 maxon RE16 数据表（118701 那一列：12 V、7130 rpm、18.6 mNm、10.3 Ω、16 mNm/A）（L3 课件）" src="assets/figs/ppt/L3_datasheet.jpg"></p>
 <p><em>图 L3-4 maxon RE16 数据表（118701 那一列：12 V、7130 rpm、18.6 mNm、10.3 Ω、16 mNm/A）（L3 课件）</em></p>
 <p>换成 SI：</p>
 <div class="mathblock">$$K_T=0.016\ \text{N·m/A},\qquad
@@ -638,7 +640,7 @@ K_b=\frac{12}{746.6}=0.01607\ \text{V·s/rad}$$</div>
 \omega_0=\frac{2\pi\times8000}{60}=837.8\ \text{rad/s},\qquad
 \text{斜率}=\frac{K_TK_b}{R_a}=8.21\times10^{-4}$$</div>
 <ul><li><strong>恒转矩负载</strong> $T_L=0.30$ N·m：$0.30=0.688-8.21\times10^{-4}\omega$ → $\omega=472$ rad/s $=4509$ rpm；</li><li><strong>风机负载</strong> $T_L=2.5\times10^{-6}\omega^2$：解二次方程得 $\omega=385$ rad/s $=3680$ rpm。</li></ul>
-<p><img alt="电机工作点" src="figs/fig2_motor.png"></p>
+<p><img alt="电机工作点" src="assets/figs/fig2_motor.png"></p>
 <blockquote><p>【说明】同一个电机，负载类型不同，工作点就不同：风机负载的工作点更低、电流更大、效率更低。<strong>"电机发烫"往往不是电机坏了，是工作点选错了。</strong></p></blockquote>
 <h3 id="sec-99">2.7 哪台电机更好（课件 20–22 页）</h3>
 <p>两条 $T-\omega$ 线比较，看两个指标：</p>
@@ -653,7 +655,7 @@ K_b=\frac{12}{746.6}=0.01607\ \text{V·s/rad}$$</div>
 <div class="mathblock">$$T_L(\omega)=T_0+k_v\omega+k_q\omega^2+\frac{P_{\text{proc}}}{\omega}$$</div>
 <div class="tablewrap"><table><thead><tr><th>项</th><th>物理来源</th><th>典型负载</th></tr></thead><tbody><tr><td>$T_0$</td><td>库仑摩擦、预紧、重力</td><td>轴承/密封、提升重物、传送带</td></tr><tr><td>$k_v\omega$</td><td>粘性摩擦（油膜剪切、涡流）</td><td>润滑良好的轴系、磁粉制动器</td></tr><tr><td>$k_q\omega^2$</td><td>流体/气动阻力</td><td>风机、离心泵、螺旋桨</td></tr><tr><td>$P_{\text{proc}}/\omega$</td><td>恒功率工艺</td><td>卷绕、机床主轴</td></tr></tbody></table></div>
 <p>课件里的 $T_L=2+0.001\omega$（mNm，$\omega$ 用 rad/s）就是"$2$ mNm 静摩擦 $+$ 粘性项"的<strong>线性化</strong>——工程上多数场合只取前两项。</p>
-<p><img alt="四种负载线" src="figs/fig12_loadlines.png"></p>
+<p><img alt="四种负载线" src="assets/figs/fig12_loadlines.png"></p>
 <p><em>图（自绘）四种典型负载线与同一条电机特性线的交点；恒功率负载有两个交点，只有高速那个稳定</em></p>
 <p><strong>这三类来源怎么得到？</strong></p>
 <ol><li><strong>实测</strong>：测功机加载、或自由停车法测减速度（$T=J\dot\omega$）；</li><li><strong>由机构算</strong>：$T_L=F\cdot r$，$F$ 来自摩擦、重力、切削力——例：提升 $m=2$ kg、卷筒半径 $r=20$ mm，则 $T_0=mgr=2\times9.81\times0.02=0.392$ N·m；再加轴承粘性 $k_v=2\times10^{-4}$ N·m·s/rad；</li><li><strong>由工艺曲线拟合</strong>：给一组 $(\omega_i,T_i)$ 数据，最小二乘拟合上式。</li></ol>
@@ -691,13 +693,13 @@ K_b=\frac{12}{746.6}=0.01607\ \text{V·s/rad}$$</div>
 <h2 id="sec-106">4 齿轮传动类型</h2>
 <p>【课件】齿轮："a component within a transmission device that transmits rotational torque by applying a force to the teeth of another gear."</p>
 <div class="tablewrap"><table><thead><tr><th>类型</th><th>轴的关系</th><th>特点</th><th>典型用途</th></tr></thead><tbody><tr><td><strong>直齿圆柱齿轮 spur</strong></td><td>平行轴</td><td>最常用；转向相反；$T_{in}\omega_{in}\approx T_{out}\omega_{out}$</td><td>一般减速器</td></tr><tr><td>斜齿圆柱 helical</td><td>平行轴</td><td>啮合平稳、噪声小、承载高；有轴向力</td><td>高速、重载</td></tr><tr><td>锥齿轮 bevel</td><td>相交轴</td><td>改变 90° 转向</td><td>差速器、手电钻</td></tr><tr><td>蜗轮蜗杆 worm</td><td>交错轴（90°）</td><td>减速比大、转矩放大明显；效率低；<strong>只能蜗杆带蜗轮</strong>（自锁）</td><td>卷扬、分度</td></tr><tr><td>齿条齿轮 rack &amp; pinion</td><td>转动 ↔ 直线</td><td>把旋转变成直线运动</td><td>龙门机器人、转向器</td></tr></tbody></table></div>
-<p><img alt="图 L3-5 直齿外啮合：分度圆相切，两轮转向相反（L3 课件）" src="figs/ppt/L3_spur.png"></p>
+<p><img alt="图 L3-5 直齿外啮合：分度圆相切，两轮转向相反（L3 课件）" src="assets/figs/ppt/L3_spur.png"></p>
 <p><em>图 L3-5 直齿外啮合：分度圆相切，两轮转向相反（L3 课件）</em></p>
-<p><img alt="图 L3-6 斜齿轮：啮合平稳、噪声小，但有轴向力（L3 课件）" src="figs/ppt/L3_helical.jpg"></p>
+<p><img alt="图 L3-6 斜齿轮：啮合平稳、噪声小，但有轴向力（L3 课件）" src="assets/figs/ppt/L3_helical.jpg"></p>
 <p><em>图 L3-6 斜齿轮：啮合平稳、噪声小，但有轴向力（L3 课件）</em></p>
-<p><img alt="图 L3-7 锥齿轮：相交轴，90° 换向（L3 课件）" src="figs/ppt/L3_bevel.jpg"></p>
+<p><img alt="图 L3-7 锥齿轮：相交轴，90° 换向（L3 课件）" src="assets/figs/ppt/L3_bevel.jpg"></p>
 <p><em>图 L3-7 锥齿轮：相交轴，90° 换向（L3 课件）</em></p>
-<p><img alt="图 L3-8 蜗轮蜗杆：减速比大、可自锁，但效率低（L3 课件）" src="figs/ppt/L3_worm.jpg"></p>
+<p><img alt="图 L3-8 蜗轮蜗杆：减速比大、可自锁，但效率低（L3 课件）" src="assets/figs/ppt/L3_worm.jpg"></p>
 <p><em>图 L3-8 蜗轮蜗杆：减速比大、可自锁，但效率低（L3 课件）</em></p>
 <h3 id="sec-107">4.1 圆周速度与传动比</h3>
 <p>线速度连续（无滑动）：</p>
@@ -710,16 +712,16 @@ K_b=\frac{12}{746.6}=0.01607\ \text{V·s/rad}$$</div>
 <h3 id="sec-109">5.1 为什么必须是渐开线（简答必考）</h3>
 <p>【课件】</p>
 <ul><li>方齿（矩形齿）啮合时会<strong>卡死</strong>：接触点法线方向随位置变化，与连心线交点不固定 → 传动比时大时小、有冲击；留间隙则产生<strong>回差（backlash）</strong>、输出速度不稳。</li><li>渐开线满足<strong>共轭啮合（conjugate action）</strong>：接触点公法线始终是两基圆的<strong>内公切线</strong>，与连心线的交点（节点 $P_w$）固定 → <strong>瞬时传动比恒定</strong>。</li><li>渐开线的生成：一根线绕在圆柱上，松开时线上一点的轨迹。圆柱 = <strong>基圆（base circle）</strong>。</li><li>齿廓在基圆到齿顶圆之间是渐开线；基圆到齿根圆之间是<strong>径向直线</strong>；基圆内没有渐开线。</li></ul>
-<p><img alt="图 L3-9 渐开线的生成：绳绕基圆展开，展开长度等于基圆弧长（L3 课件）" src="figs/ppt/L3_involute.png"></p>
+<p><img alt="图 L3-9 渐开线的生成：绳绕基圆展开，展开长度等于基圆弧长（L3 课件）" src="assets/figs/ppt/L3_involute.png"></p>
 <p><em>图 L3-9 渐开线的生成：绳绕基圆展开，展开长度等于基圆弧长（L3 课件）</em></p>
 <h3 id="sec-110">5.2 压力角（pressure angle）</h3>
 <ul><li>啮合线（line of action）$DE$ 与两基圆相切；</li><li>压力角 $\phi$ = 啮合线与两分度圆公切线 $AB$ 的夹角；</li><li>标准值 $\phi=20^\circ$（也有 $14.5^\circ$、$25^\circ$）。</li></ul>
 <div class="tablewrap"><table><thead><tr><th>压力角</th><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td>$20^\circ$</td><td>承载能力高（齿根厚）</td><td>径向力大</td></tr><tr><td>$14.5^\circ$</td><td>中心距误差/同轴度误差引起的回差变化小；重合度大、运转平稳安静</td><td>承载能力低</td></tr></tbody></table></div>
 <p>基圆直径：</p>
 <div class="mathblock">$$d_b=d\cos\phi$$</div>
-<p><img alt="图 L3-10 啮合线 $DE$ 与两基圆相切，它与分度圆公切线的夹角就是压力角（L3 课件）" src="figs/ppt/L3_pressure_angle.jpg"></p>
+<p><img alt="图 L3-10 啮合线 $DE$ 与两基圆相切，它与分度圆公切线的夹角就是压力角（L3 课件）" src="assets/figs/ppt/L3_pressure_angle.jpg"></p>
 <p><em>图 L3-10 啮合线 $DE$ 与两基圆相切，它与分度圆公切线的夹角就是压力角（L3 课件）</em></p>
-<p><img alt="图 L3-11 压力角对齿形的影响：14.5° 齿顶薄而高、20° 常用、25° 齿根更厚（L3 课件）" src="figs/ppt/L3_pressure_shapes.jpg"></p>
+<p><img alt="图 L3-11 压力角对齿形的影响：14.5° 齿顶薄而高、20° 常用、25° 齿根更厚（L3 课件）" src="assets/figs/ppt/L3_pressure_shapes.jpg"></p>
 <p><em>图 L3-11 压力角对齿形的影响：14.5° 齿顶薄而高、20° 常用、25° 齿根更厚（L3 课件）</em></p>
 <h3 id="sec-111">5.3 间隙（clearance）</h3>
 <p>【课件】"the distance from the tip of a tooth to the circle passing through the bottom of the tooth space, measuring radially."</p>
@@ -727,7 +729,7 @@ K_b=\frac{12}{746.6}=0.01607\ \text{V·s/rad}$$</div>
 <h3 id="sec-112">5.4 基本参数（必背）</h3>
 <div class="tablewrap"><table><thead><tr><th>参数</th><th>符号</th><th>公式</th><th>说明</th></tr></thead><tbody><tr><td>齿数</td><td>$z$</td><td>—</td><td>小齿轮叫 pinion，大齿轮叫 gear</td></tr><tr><td>分度圆直径</td><td>$d$</td><td>$d=mz$</td><td>计算基准，两轮分度圆相切</td></tr><tr><td>周节（circular pitch）</td><td>$p_c$</td><td>$p_c=\dfrac{\pi d}{z}=\pi m$</td><td>相邻同侧齿廓在分度圆上的弧长；<strong>啮合两轮 $p_c$ 必须相同</strong></td></tr><tr><td>模数（module）</td><td>$m$</td><td>$m=\dfrac{d}{z}=\dfrac{p_c}{\pi}$</td><td>SI 的齿大小指标（mm）</td></tr><tr><td>径节（diametral pitch）</td><td>$P_d$</td><td>$P_d=\dfrac{z}{d}$</td><td>英制指标（teeth/inch），与模数互为倒数：$m[\text{mm}]=25.4/P_d$</td></tr><tr><td>基圆</td><td>$d_b$</td><td>$d\cos\phi$</td><td>渐开线的发生圆</td></tr><tr><td>齿顶圆</td><td>$d_a$</td><td>$d+2m$</td><td>标准全齿高</td></tr><tr><td>齿根圆</td><td>$d_f$</td><td>$d-2.5m$</td><td>标准全齿高</td></tr><tr><td>标准中心距</td><td>$a_w$</td><td>$a_w=\dfrac{m(z_1+z_2)}{2}$</td><td>外啮合，两分度圆相切</td></tr></tbody></table></div>
 <blockquote><p>【课件原话】"For a given pitch diameter, the smaller the diametral pitch, the larger the gear tooth."——$P_d$ 越小齿越大；模数 $m$ 越大齿越大，两者互为倒数。</p></blockquote>
-<p><img alt="图 L3-12 齿轮几何术语：齿顶高/齿根高/周节/齿厚/齿槽宽/顶隙/工作高度（L3 课件）" src="figs/ppt/L3_tooth_terms.jpg"></p>
+<p><img alt="图 L3-12 齿轮几何术语：齿顶高/齿根高/周节/齿厚/齿槽宽/顶隙/工作高度（L3 课件）" src="assets/figs/ppt/L3_tooth_terms.jpg"></p>
 <p><em>图 L3-12 齿轮几何术语：齿顶高/齿根高/周节/齿厚/齿槽宽/顶隙/工作高度（L3 课件）</em></p>
 <h3 id="sec-113">5.5 标准全齿高比例（补充，但做题必用）</h3>
 <div class="mathblock">$$h_a=m\ (\text{addendum}),\qquad
@@ -763,14 +765,14 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <p>由于同一模数下 $z\propto d\propto r$，所以也可以写 $=\prod r_{\text{driven}}/\prod r_{\text{driving}}$。</p>
 <p><strong>惰轮（idler）</strong>：</p>
 <ul><li>不改变传动比大小（它同时是主动轮和从动轮，在分子分母里抵消）；</li><li><strong>只改变转向</strong>：惰轮个数为奇数 → 与主动轮同向；偶数 → 反向。</li></ul>
-<p><img alt="图 L3-13 简单轮系与惰轮：惰轮只改变转向，不改变速比（L3 课件）" src="figs/ppt/L3_simple_train.png"></p>
+<p><img alt="图 L3-13 简单轮系与惰轮：惰轮只改变转向，不改变速比（L3 课件）" src="assets/figs/ppt/L3_simple_train.png"></p>
 <p><em>图 L3-13 简单轮系与惰轮：惰轮只改变转向，不改变速比（L3 课件）</em></p>
 <h3 id="sec-120">6.3 复合轮系（compound train）</h3>
 <ul><li>一对齿轮的传动比实际限制约 <strong>10:1</strong>；</li><li>要更大传动比，就把两个齿轮<strong>固连在同一根轴上</strong>（复合轮系）；</li><li>传动比 = 各级传动比之积：</li></ul>
 <div class="mathblock">$$\frac{\omega_{in}}{\omega_{out}}
 =\frac{z_2z_4z_6\cdots}{z_3z_5z_7\cdots}$$</div>
 <p>转向由各级外啮合次数判定（或逐级画箭头）。</p>
-<p><img alt="图 L3-14 复合轮系：同轴固连的两个齿轮，传动比为各级之积（L3 课件）" src="figs/ppt/L3_compound_train.jpg"></p>
+<p><img alt="图 L3-14 复合轮系：同轴固连的两个齿轮，传动比为各级之积（L3 课件）" src="assets/figs/ppt/L3_compound_train.jpg"></p>
 <p><em>图 L3-14 复合轮系：同轴固连的两个齿轮，传动比为各级之积（L3 课件）</em></p>
 <h3 id="sec-121">6.4 例题：设计 $u=20$ 的两级齿轮箱（对应期末 Q8）</h3>
 <p>要求每对齿轮传动比 $&lt;10$，取</p>
@@ -784,7 +786,7 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <h3 id="sec-124">7.1 组成与自由度</h3>
 <p>四个基本件：<strong>太阳轮 sun</strong>（齿数 $z_s$）、<strong>行星轮 planet</strong>（$z_p$）、<strong>内齿圈 ring</strong>（$z_r$）、<strong>系杆/行星架 carrier</strong>（角速度 $\omega_c$）。</p>
 <ul><li>行星轮既自转又"绕太阳轮公转"；</li><li>两个自由度：必须给定<strong>任意两个</strong>构件的转向与转速，运动才唯一（常见做法是"固定其中一个"）。</li></ul>
-<p><img alt="图 L3-15 行星轮系：太阳轮、行星轮、内齿圈、系杆（L3 课件）" src="figs/ppt/L3_planetary.png"></p>
+<p><img alt="图 L3-15 行星轮系：太阳轮、行星轮、内齿圈、系杆（L3 课件）" src="assets/figs/ppt/L3_planetary.png"></p>
 <p><em>图 L3-15 行星轮系：太阳轮、行星轮、内齿圈、系杆（L3 课件）</em></p>
 <h3 id="sec-125">7.2 运动学方程（课件 75–77 页）</h3>
 <p>以齿数表示（同模数下齿数与半径成正比，也可直接用半径）：</p>
@@ -797,7 +799,7 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <p>把 $(\omega_s,\omega_r,\omega_c)$ 看成一根杠杆上三个点的速度，力臂为 $z_s$、$z_r$、$z_s+z_r$：</p>
 <div class="mathblock">$$\omega_c=\frac{z_s}{z_r+z_s}\,\omega_s+\frac{z_r}{z_r+z_s}\,\omega_r$$</div>
 <p>三个节点的运动被这条直线约束 → <strong>只有 2 个自由度</strong>。</p>
-<p><img alt="图（自绘）行星轮系的杠杆类比：太阳轮、系杆、齿圈三个节点在同一直线上，速度向量的端点共线" src="figs/fig6_lever.png"></p>
+<p><img alt="图（自绘）行星轮系的杠杆类比：太阳轮、系杆、齿圈三个节点在同一直线上，速度向量的端点共线" src="assets/figs/fig6_lever.png"></p>
 <p><em>图（自绘）行星轮系的杠杆类比：太阳轮、系杆、齿圈三个节点在同一直线上，速度向量的端点共线</em></p>
 <div class="tablewrap"><table><thead><tr><th>固定件</th><th>输入 → 输出</th><th>传动比</th></tr></thead><tbody><tr><td>齿圈固定</td><td>太阳 → 系杆</td><td>$u_{sc}=1+\dfrac{z_r}{z_s}$</td></tr><tr><td>太阳轮固定</td><td>齿圈 → 系杆</td><td>$u_{rc}=1+\dfrac{z_s}{z_r}$</td></tr><tr><td>系杆固定</td><td>太阳 → 齿圈</td><td>$u_{sr}=-\dfrac{z_r}{z_s}$（反向）</td></tr><tr><td>无（差动）</td><td>两个输入一个输出</td><td>$\omega_s z_s+\omega_r z_r=\omega_c(z_r+z_s)$</td></tr></tbody></table></div>
 <h3 id="sec-127">7.4 例题（课件 78 页原题）</h3>
@@ -808,7 +810,7 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <div class="mathblock">$$\omega_p=\frac{\omega_c(z_p+z_s)}{z_p}=\frac{20\times50}{30}=33.3\ \text{rpm}$$</div>
 <p>按行星轮的反号约定，实际转向与太阳轮<strong>相反</strong> → <strong>逆时针 33.3 rpm</strong>。</p>
 <blockquote><p>【验算】用速度法：行星轮中心的线速度 $v_c=\omega_c(z_p+z_s)/2$，与齿圈接触点速度为 0 → $\omega_p^{\text{abs}}=-v_c/(z_p/2)=-\omega_c(z_p+z_s)/z_p=-33.3$，负号即逆时针。两种方法一致。</p></blockquote>
-<p><img alt="图 L3-16 行星轮系算例：太阳 20 齿、行星 30 齿、齿圈 80 齿（L3 课件）" src="figs/ppt/L3_planetary_example.png"></p>
+<p><img alt="图 L3-16 行星轮系算例：太阳 20 齿、行星 30 齿、齿圈 80 齿（L3 课件）" src="assets/figs/ppt/L3_planetary_example.png"></p>
 <p><em>图 L3-16 行星轮系算例：太阳 20 齿、行星 30 齿、齿圈 80 齿（L3 课件）</em></p>
 <h3 id="sec-128">7.5 行星齿轮箱（课件 72–74 页）</h3>
 <ul><li>同一套行星轮，通过"抱住/松开"不同构件可实现：减速、增速（overdrive）、反转、直接挡（1:1）、空挡；</li><li>课件那款行星齿轮箱（type A：行星架输出、齿圈固定）有 8 种速比：4:1、5:1、16:1、20:1、25:1、80:1、100:1、400:1，空载转速 23.5–2350 rpm；</li><li>该型传动比 $u=\dfrac{z_r+z_s}{z_s}=1+\dfrac{D_{\text{ring}}}{D_{\text{sun}}}$；</li><li>优点：体积小、速比大、多齿同时啮合（承载高）、可多级串联；缺点：结构复杂、齿面受力大（"high applied torques that can strip teeth"）。</li></ul>
@@ -821,19 +823,19 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <div class="mathblock">$$u_h=\frac{z_f}{z_g-z_f}=\frac{z_f}{2}\quad(\text{齿数差为 }2),\qquad \text{转向与输入相反}$$</div>
 <p>柔轮固定、刚轮输出时 $u_h=z_g/2$，转向相同。课本不给公式，但谐波"齿数差 2"这个结论要记住。</p>
 <hr>
-<p><img alt="图 L3-17 谐波减速器的三大件：波发生器（椭圆凸轮+柔性轴承）、柔轮（薄壁外齿）、刚轮（内齿圈）（L3 课件）" src="figs/ppt/L3_harmonic.jpg"></p>
+<p><img alt="图 L3-17 谐波减速器的三大件：波发生器（椭圆凸轮+柔性轴承）、柔轮（薄壁外齿）、刚轮（内齿圈）（L3 课件）" src="assets/figs/ppt/L3_harmonic.jpg"></p>
 <p><em>图 L3-17 谐波减速器的三大件：波发生器（椭圆凸轮+柔性轴承）、柔轮（薄壁外齿）、刚轮（内齿圈）（L3 课件）</em></p>
 <h2 id="sec-130">9 CVT（无级变速）</h2>
 <p>【课件】"CVTs have no fixed transmission"——靠带轮工作半径连续变化（或钢球/滚轮）实现连续速比，例子：NuVinci。特点是速比连续可调，但效率与承载通常低于齿轮。</p>
 <hr>
-<p><img alt="图 L3-18 NuVinci CVT：用钢球/滚轮改变接触半径，实现连续变速（L3 课件）" src="figs/ppt/L3_cvt.jpg"></p>
+<p><img alt="图 L3-18 NuVinci CVT：用钢球/滚轮改变接触半径，实现连续变速（L3 课件）" src="assets/figs/ppt/L3_cvt.jpg"></p>
 <p><em>图 L3-18 NuVinci CVT：用钢球/滚轮改变接触半径，实现连续变速（L3 课件）</em></p>
 <h2 id="sec-131">10 带与链（课件 86–90 页）</h2>
 <h3 id="sec-132">10.1 带传动</h3>
 <ul><li>可以自由选择中心距（齿轮做不到），但<strong>必须张紧</strong>（张紧轮或可调中心距），否则打滑；</li><li>理想情况下与齿轮同样的关系：</li></ul>
 <div class="mathblock">$$\frac{T_1}{T_2}=\frac{d_1}{d_2}=\frac{\omega_2}{\omega_1}$$</div>
 <ul><li>能吸收振动、便宜、效率与齿轮接近；缺点是有弹性滑动，传动比不绝对准确。</li></ul>
-<p><img alt="图 L3-19 钻床的带传动：中心距可调、需要张紧（L3 课件）" src="figs/ppt/L3_belt.jpg"></p>
+<p><img alt="图 L3-19 钻床的带传动：中心距可调、需要张紧（L3 课件）" src="assets/figs/ppt/L3_belt.jpg"></p>
 <p><em>图 L3-19 钻床的带传动：中心距可调、需要张紧（L3 课件）</em></p>
 <h3 id="sec-133">10.2 链传动</h3>
 <ul><li>便宜、中心距可调、<strong>不需要很大张紧力、不易打滑</strong>；</li><li>最常用的是<strong>滚子链（roller chain）</strong>；传递转矩比带大；</li><li>长度靠拆装<strong>过渡链节/活节（master link）</strong>调整；</li><li>同样有 $\dfrac{T_2}{T_1}=\dfrac{d_2}{d_1}=\dfrac{\omega_1}{\omega_2}$（平均意义）。</li></ul>
@@ -870,7 +872,7 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <h3 id="sec-143">1.3 早期自由度最大（课件 12 页）</h3>
 <p>【课件】"Be creative early. Freedom decreases as more knowledge/cost/details are committed."（Dieter &amp; Schmidt）</p>
 <ul><li>概念阶段：几乎无限方案，改动成本低；</li><li>详细设计后：一个尺寸改动会牵动几十张图、模具、工装；</li><li>所以<strong>越早做对方向，越省钱</strong>。</li></ul>
-<p><img alt="图 L4-1 设计自由度随时间下降：越早改越便宜，后期只能微调（L4 课件）" src="figs/ppt/L4_freedom.png"></p>
+<p><img alt="图 L4-1 设计自由度随时间下降：越早改越便宜，后期只能微调（L4 课件）" src="assets/figs/ppt/L4_freedom.png"></p>
 <p><em>图 L4-1 设计自由度随时间下降：越早改越便宜，后期只能微调（L4 课件）</em></p>
 <h3 id="sec-144">1.4 IDEO "Deep Dive"（课件 13–14 页）</h3>
 <p>流程：Problem definition → Information search → Concept generation → Funneling → Prototyping。</p>
@@ -885,42 +887,42 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <p>【课件课堂活动】设计订书机：至少列 4 个材料属性并说明理由（例：弹簧要弹性极限高；机身要刚度高、成本低；钉道要硬度高、耐磨；手柄要绝缘、手感好）。</p>
 <h3 id="sec-148">2.2 四大材料族（课件 32 页）</h3>
 <div class="tablewrap"><table><thead><tr><th>族</th><th>特征</th><th>例子</th></tr></thead><tbody><tr><td><strong>金属 Metals</strong></td><td>延展、韧、导热导电好</td><td>钢、铝、铜、钛</td></tr><tr><td><strong>陶瓷与玻璃 Ceramics &amp; glasses</strong></td><td>硬、脆、耐蚀、绝缘</td><td>火花塞、刀具、光学玻璃</td></tr><tr><td><strong>高分子 Polymers（含弹性体、泡沫）</strong></td><td>轻、易成形、柔、绝缘</td><td>ABS、POM、尼龙、橡胶</td></tr><tr><td><strong>复合材料 Hybrids/composites</strong></td><td>两种以上材料组合，各向异性</td><td>玻纤/碳纤、蜂窝夹层、木材</td></tr></tbody></table></div>
-<p><img alt="图 L4-2 材料族与性能图（Ashby 图）：金属、陶瓷、高分子、复合材料各占一块区域（L4 课件）" src="figs/ppt/L4_families.jpg"></p>
+<p><img alt="图 L4-2 材料族与性能图（Ashby 图）：金属、陶瓷、高分子、复合材料各占一块区域（L4 课件）" src="assets/figs/ppt/L4_families.jpg"></p>
 <p><em>图 L4-2 材料族与性能图（Ashby 图）：金属、陶瓷、高分子、复合材料各占一块区域（L4 课件）</em></p>
 <h3 id="sec-149">2.3 钢（课件 20–21 页）</h3>
 <p>成分：铁 + 碳（+ 铬、锰、钒、钨等合金元素）。</p>
 <div class="tablewrap"><table><thead><tr><th>优点</th><th>缺点</th></tr></thead><tbody><tr><td>强度高、刚度高（$E\approx200$ GPa）</td><td>密度大（约 7850 kg/m³），重</td></tr><tr><td>相对韧（不是脆性材料）</td><td>碳钢会锈，必须防护</td></tr><tr><td>可热处理（调质、淬火、渗碳）改变硬度与性能</td><td>加工比铝费劲</td></tr></tbody></table></div>
 <p>防锈三种常见做法：<strong>涂漆、镀锌（galvanizing）、发黑（black oxide）</strong>。</p>
 <p>常见型材：圆棒、方棒、圆管、方管、角钢、槽钢、工字钢、扁钢。</p>
-<p><img alt="图 L4-3 常见钢材型材：圆棒、方管、角钢、槽钢、扁钢等（L4 课件）" src="figs/ppt/L4_steel_stock.jpg"></p>
+<p><img alt="图 L4-3 常见钢材型材：圆棒、方管、角钢、槽钢、扁钢等（L4 课件）" src="assets/figs/ppt/L4_steel_stock.jpg"></p>
 <p><em>图 L4-3 常见钢材型材：圆棒、方管、角钢、槽钢、扁钢等（L4 课件）</em></p>
 <h3 id="sec-150">2.4 铝（课件 23 页）</h3>
 <ul><li><strong>比强度高</strong>（强度/密度），密度约为钢的 1/3；</li><li>耐蚀性好（表面自然氧化膜），但持续摩擦会磨掉氧化膜，可<strong>阳极氧化（anodizing）</strong>；</li><li>导电导热好；</li><li><strong>刚度只有钢的约 1/3</strong>（$E\approx70$ GPa）——这是最容易记错的点；</li><li>常合金化（Cu、Si、Mn、Mg），牌号如 <strong>6061-T6</strong>。</li></ul>
 <blockquote><p>【说明】发动机缸体从铸铁改铝，就是为了减重；但铝的刚度低，所以结构件要靠截面形状（筋、管）补刚度。</p></blockquote>
-<p><img alt="图 L4-4 铝合金铸件（进水口）：比强度高、刚度约为钢的 1/3（L4 课件）" src="figs/ppt/L4_aluminum.jpg"></p>
+<p><img alt="图 L4-4 铝合金铸件（进水口）：比强度高、刚度约为钢的 1/3（L4 课件）" src="assets/figs/ppt/L4_aluminum.jpg"></p>
 <p><em>图 L4-4 铝合金铸件（进水口）：比强度高、刚度约为钢的 1/3（L4 课件）</em></p>
 <h3 id="sec-151">2.5 高分子（课件 24–27 页）</h3>
 <div class="tablewrap"><table><thead><tr><th>类别</th><th>行为</th><th>例子</th></tr></thead><tbody><tr><td><strong>热塑性 Thermoplastics</strong></td><td>加热软化、冷却硬化，可反复</td><td>PE、PP、PVC、PS、ABS（乐高）、PMMA（亚克力）、PC（防弹）、POM（Delrin）</td></tr><tr><td><strong>热固性 Thermosets</strong></td><td>加热发生化学反应固化，不可逆</td><td>酚醛（电木）、聚酯、环氧、硅胶、聚氨酯</td></tr><tr><td><strong>弹性体 Elastomers</strong></td><td>大变形可恢复</td><td>橡胶密封圈、O 型圈</td></tr></tbody></table></div>
 <p>应用例子：</p>
 <ul><li>水龙头出水口：塑料主体 + <strong>黄铜嵌件</strong>（螺纹处承力，塑料不承力）——"load limiter"思想；</li><li>橡胶密封圈：靠弹性变形密封；</li><li><strong>挑战者号（1986）O 型圈</strong>：低温下弹性体失去回弹，密封失效——材料选择与环境温度直接相关。</li></ul>
-<p><img alt="图 L4-5 塑料件（带金属嵌件）：承力部位用嵌件，塑料只做形状（L4 课件）" src="figs/ppt/L4_polymer.jpg"></p>
+<p><img alt="图 L4-5 塑料件（带金属嵌件）：承力部位用嵌件，塑料只做形状（L4 课件）" src="assets/figs/ppt/L4_polymer.jpg"></p>
 <p><em>图 L4-5 塑料件（带金属嵌件）：承力部位用嵌件，塑料只做形状（L4 课件）</em></p>
-<p><img alt="图 L4-6 橡胶 O 形圈：靠弹性变形密封，低温会失去回弹（挑战者号事故）（L4 课件）" src="figs/ppt/L4_orings.jpg"></p>
+<p><img alt="图 L4-6 橡胶 O 形圈：靠弹性变形密封，低温会失去回弹（挑战者号事故）（L4 课件）" src="assets/figs/ppt/L4_orings.jpg"></p>
 <p><em>图 L4-6 橡胶 O 形圈：靠弹性变形密封，低温会失去回弹（挑战者号事故）（L4 课件）</em></p>
 <h3 id="sec-152">2.6 陶瓷与复合材料（课件 28–30 页）</h3>
 <ul><li>陶瓷：火花塞（耐高温、绝缘）、切削刀片（硬质合金）；</li><li>复合材料：玻璃钢船体、碳纤 + Nomex 芳纶蜂窝夹层（太阳能车）、纤维缠绕压力容器；</li><li>特点：<strong>比强度/比刚度高、可设计性强</strong>，但失效模式复杂（分层、纤维断裂）、连接困难、成本高。</li></ul>
-<p><img alt="图 L4-7 火花塞：陶瓷绝缘体耐高温、绝缘、耐蚀（L4 课件）" src="figs/ppt/L4_sparkplug.jpg"></p>
+<p><img alt="图 L4-7 火花塞：陶瓷绝缘体耐高温、绝缘、耐蚀（L4 课件）" src="assets/figs/ppt/L4_sparkplug.jpg"></p>
 <p><em>图 L4-7 火花塞：陶瓷绝缘体耐高温、绝缘、耐蚀（L4 课件）</em></p>
 <h3 id="sec-153">2.7 强度 vs 刚度（必考概念，课件 31、33 页）</h3>
 <div class="tablewrap"><table><thead><tr><th></th><th>强度 Strength</th><th>刚度 Stiffness</th></tr></thead><tbody><tr><td>定义</td><td>抵抗<strong>破坏/屈服</strong>的能力</td><td>抵抗<strong>变形</strong>的能力</td></tr><tr><td>指标</td><td>$\sigma_y$、$\sigma_u$、$S_e$（MPa）</td><td>$E$（MPa）、刚度 $k$（N/mm）</td></tr><tr><td>判据</td><td>$\sigma\le[\sigma]$</td><td>$w\le[w]$</td></tr><tr><td>失效形式</td><td>断裂、屈服、疲劳</td><td>变形过大、失稳、精度丧失</td></tr></tbody></table></div>
 <p>【课件例子】高速公路钢索护栏：<strong>要强度（撞不断）</strong>，但也<strong>要刚度（变形不能太大）</strong>——两者都可能成为失效模式。</p>
 <blockquote><p>【说明】"强但不硬"是常见组合（如橡胶：强度不高、刚度极低）；"硬但脆"（陶瓷：强度高、韧性差）。选材时先问"这个零件是怕断还是怕变形"。</p></blockquote>
-<p><img alt="图 L4-8 钢索护栏：既怕撞断（强度），也怕变形过大（刚度）（L4 课件）" src="figs/ppt/L4_guardrail.jpg"></p>
+<p><img alt="图 L4-8 钢索护栏：既怕撞断（强度），也怕变形过大（刚度）（L4 课件）" src="assets/figs/ppt/L4_guardrail.jpg"></p>
 <p><em>图 L4-8 钢索护栏：既怕撞断（强度），也怕变形过大（刚度）（L4 课件）</em></p>
 <h3 id="sec-154">2.8 应力–应变曲线（补充，2023 期末 Q7 原题）</h3>
 <p>课件只给了材料性能数值（PLA：$E=2500$ MPa、$\sigma_y=50$ MPa、$\sigma_u=60$ MPa、$\sigma_f=45$ MPa、$\varepsilon_y=2\%$、$\varepsilon_u=5\%$），期末要求"用折线画出并标出所有数值"。画法：</p>
 <ol><li>横轴工程应变 $\varepsilon$（%），纵轴工程应力 $\sigma$（MPa）；</li><li>原点到屈服点：直线，斜率 $E=\sigma_y/\varepsilon_y=50/0.02=2500$ MPa（<strong>先验算一致性</strong>）；</li><li>屈服点到抗拉点：塑性段（略微上升，加工硬化），到 $(5\%,\ 60)$；</li><li>抗拉点之后：颈缩、下降，到断裂点 $(5\%,\ 45)$；</li><li>标出 $\sigma_y$、$\sigma_u$、$\sigma_f$、$\varepsilon_y$、$\varepsilon_u$，以及弹性段斜率 $E$。</li></ol>
-<p><img alt="应力-应变曲线示例" src="figs/fig5_stressstrain.png"></p>
+<p><img alt="应力-应变曲线示例" src="assets/figs/fig5_stressstrain.png"></p>
 <div class="tablewrap"><table><thead><tr><th>特征</th><th>含义</th><th>用途</th></tr></thead><tbody><tr><td>弹性段斜率 $E$</td><td>刚度</td><td>变形计算</td></tr><tr><td>屈服强度 $\sigma_y$</td><td>开始塑性变形</td><td><strong>静强度设计的主判据</strong>（配合安全系数）</td></tr><tr><td>抗拉强度 $\sigma_u$</td><td>最大工程应力</td><td>质量指标、疲劳极限估算</td></tr><tr><td>断裂应力 $\sigma_f$</td><td>断裂瞬间</td><td>脆性材料更关注</td></tr><tr><td>延伸率 $\delta=\varepsilon_u$</td><td>塑性</td><td>$&gt;5\%$ 一般算塑性材料</td></tr><tr><td>曲线下面积</td><td>韧性（能量吸收）</td><td>抗冲击</td></tr></tbody></table></div>
 <blockquote><p>【坑 1】$\sigma_y=50$ MPa 且 $\varepsilon_y=2\%$ 时，$E$ 必须是 2500 MPa；若题目给的三个数不自洽，以 $E=\sigma_y/\varepsilon_y$ 为准并在卷面上说明。</p><p>【坑 2】题目只给了 $\varepsilon_u=5\%$，没给断裂应变，所以断裂点画在 $\varepsilon=5\%$ 处、应力从 60 竖直降到 45，这是<strong>简化画法</strong>；真实曲线在颈缩段应变还会继续增加。卷面上注明"简化为在 $\varepsilon_u$ 处下降"即可。</p></blockquote>
 <hr>
@@ -947,7 +949,7 @@ h_c=0.25m\ (\text{clearance，顶隙})$$</div>
 <p>总传动比 $u=4\times5=20$，输出转速 $n_{out}=n_m/20$，输出转矩 $T_{out}=20\eta T_m$（$\eta$ 为两级效率之积，约 0.95–0.97）。</p>
 <blockquote><p>【说明】若要"同轴输出"（输入输出同轴线），两级中心距必须相等，需用变位或改用行星/谐波；这是齿轮箱布局的核心约束。</p></blockquote>
 <h3 id="sec-162">3.7 一张图看懂几何关系</h3>
-<p><img alt="渐开线齿轮与轮系" src="figs/fig3_gears.png"></p>
+<p><img alt="渐开线齿轮与轮系" src="assets/figs/fig3_gears.png"></p>
 <ul><li>上：一对啮合齿轮的分度圆相切、基圆内切于啮合线；</li><li>下：行星轮系（太阳—行星—齿圈—系杆）与谐波减速器的组成。</li></ul>
 <hr>
 <h2 id="sec-163">4 易错点清单</h2>
@@ -975,7 +977,7 @@ W_r=W_n\sin\phi\quad(\text{径向力})$$</div>
 <div class="mathblock">$$\Longrightarrow\quad W_r=W_t\tan\phi,\qquad W_n=\frac{W_t}{\cos\phi}$$</div>
 <ul><li>$W_t$：真正传递转矩的分量，<strong>所有强度公式都用它</strong>；</li><li>$W_r$：把两轴推开，由轴承承担，对弯曲强度影响小（课件明确"neglect"）；</li><li>$\phi$：压力角（标准 $20^\circ$）。</li></ul>
 <p>符号约定：$F_{23}^{t}$ 表示"构件 2 对构件 3 的切向力"，$F_{23}^{r}$ 为径向分量。</p>
-<p><img alt="图 L5-1 齿面受力：法向力 $W_n$ 分解为切向 $W_t$ 与径向 $W_r$（$\phi$ 为压力角）（L5 课件）" src="figs/ppt/L5_force.jpg"></p>
+<p><img alt="图 L5-1 齿面受力：法向力 $W_n$ 分解为切向 $W_t$ 与径向 $W_r$（$\phi$ 为压力角）（L5 课件）" src="assets/figs/ppt/L5_force.jpg"></p>
 <p><em>图 L5-1 齿面受力：法向力 $W_n$ 分解为切向 $W_t$ 与径向 $W_r$（$\phi$ 为压力角）（L5 课件）</em></p>
 <h3 id="sec-170">1.2 功率、速度、载荷的关系</h3>
 <p><strong>马力–转矩–转速</strong>（US）：</p>
@@ -1007,7 +1009,7 @@ W_t=\frac{60P}{\pi dn}$$</div>
 <div class="mathblock">$$F_{b3}^{x}=-(F_{23}^{t}+F_{43}^{r})=-(-0.546+0.199)=0.347\ \text{kN}$$</div>
 <div class="mathblock">$$F_{b3}^{y}=-(F_{23}^{r}+F_{43}^{t})=-(0.199-0.546)=0.347\ \text{kN}$$</div>
 <blockquote><p>【说明】符号来自"力平衡"，方向画对了自然就对；考试一定要画受力图（自由体图），标出 $W_t$ 的方向（主动轮与转向相反、从动轮与转向相同）。</p></blockquote>
-<p><img alt="图 L5-2 三齿轮轮系的受力方向（例 13-7 的 Fig. 13-34）：惰轮两侧切向力等大反向（L5 课件）" src="figs/ppt/L5_train.jpg"></p>
+<p><img alt="图 L5-2 三齿轮轮系的受力方向（例 13-7 的 Fig. 13-34）：惰轮两侧切向力等大反向（L5 课件）" src="assets/figs/ppt/L5_train.jpg"></p>
 <p><em>图 L5-2 三齿轮轮系的受力方向（例 13-7 的 Fig. 13-34）：惰轮两侧切向力等大反向（L5 课件）</em></p>
 <h3 id="sec-173">1.5 轴承径向载荷（期末 Q11 的思路）</h3>
 <div class="mathblock">$$W_r=W_t\tan\phi,\qquad W_{total}=\frac{W_t}{\cos\phi}$$</div>
@@ -1021,7 +1023,7 @@ W_t=\frac{60P}{\pi dn}$$</div>
 <h3 id="sec-176">2.2 惰轮为什么最先坏（课件 1–3 页）</h3>
 <p>【课件】"The idler gear, because the teeth are being bent in both directions instead of just one direction. In other words, they experience reversed loading."</p>
 <ul><li>主动轮、从动轮的齿根弯曲应力是<strong>单向脉动</strong>（0 → max → 0）；</li><li>惰轮同时与两侧啮合，齿根先受一侧弯曲、再受另一侧弯曲 → <strong>对称循环（reversed）</strong>；</li><li>同样的应力幅下，对称循环的疲劳寿命远低于脉动循环 → 惰轮先断。</li></ul>
-<p><img alt="图 L5-3 主动轮—惰轮—从动轮：惰轮轮齿两次受力方向相反（对称循环）（L5 课件）" src="figs/ppt/L5_idler.png"></p>
+<p><img alt="图 L5-3 主动轮—惰轮—从动轮：惰轮轮齿两次受力方向相反（对称循环）（L5 课件）" src="assets/figs/ppt/L5_idler.png"></p>
 <p><em>图 L5-3 主动轮—惰轮—从动轮：惰轮轮齿两次受力方向相反（对称循环）（L5 课件）</em></p>
 <h3 id="sec-177">2.3 为什么"齿面故意设计得比齿根弱"（课件 21–22 页）</h3>
 <p>【课件】"Gear teeth are typically designed to be weaker in wear than in bending. Why?"</p>
@@ -1037,9 +1039,9 @@ W_t=\frac{60P}{\pi dn}$$</div>
 \sigma=\frac{W_t}{b_f\,m\,Y}\ (\text{SI})$$</div>
 <p>其中 $P_d$ 为径节、$m$ 为模数、$Y$ 为 Lewis 齿形系数（查表）；$M_b$ 是齿根弯矩、$y$ 是到中性轴的距离、$I_z$ 是截面惯性矩（都是悬臂梁模型里的量）。</p>
 <blockquote><p>【记忆】$Y$ 越大（齿数越多）→ 同样载荷下应力越小。齿条（$z\to\infty$）的 $Y$ 最大。</p></blockquote>
-<p><img alt="图 L5-4 悬臂梁模型：把轮齿看成齿根固定的悬臂梁，载荷作用在齿顶（L5 课件）" src="figs/ppt/L5_cantilever.png"></p>
+<p><img alt="图 L5-4 悬臂梁模型：把轮齿看成齿根固定的悬臂梁，载荷作用在齿顶（L5 课件）" src="assets/figs/ppt/L5_cantilever.png"></p>
 <p><em>图 L5-4 悬臂梁模型：把轮齿看成齿根固定的悬臂梁，载荷作用在齿顶（L5 课件）</em></p>
-<p><img alt="图 L5-5 抛物线内切齿廓：用齿形系数 $Y$ 修正实际齿形与理想抛物线的差别（L5 课件）" src="figs/ppt/L5_lewis.png"></p>
+<p><img alt="图 L5-5 抛物线内切齿廓：用齿形系数 $Y$ 修正实际齿形与理想抛物线的差别（L5 课件）" src="assets/figs/ppt/L5_lewis.png"></p>
 <p><em>图 L5-5 抛物线内切齿廓：用齿形系数 $Y$ 修正实际齿形与理想抛物线的差别（L5 课件）</em></p>
 <h3 id="sec-181">3.2 完整公式（含速度系数）</h3>
 <p><strong>US 单位</strong>（$\sigma$ psi，$W_t$ lbf，$b_f$ in，$P_d$ teeth/in）：</p>
@@ -1054,7 +1056,7 @@ W_t=\frac{60P}{\pi dn}$$</div>
 <div class="tablewrap"><table><thead><tr><th>$z$</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th><th>26</th><th>28</th><th>30</th></tr></thead><tbody><tr><td>$Y$</td><td>0.245</td><td>0.277</td><td>0.296</td><td>0.309</td><td>0.322</td><td>0.331</td><td>0.337</td><td>0.346</td><td>0.353</td><td>0.359</td></tr></tbody></table></div>
 <div class="tablewrap"><table><thead><tr><th>$z$</th><th>34</th><th>36</th><th>38</th><th>40</th><th>45</th><th>50</th><th>更大</th><th>齿条</th></tr></thead><tbody><tr><td>$Y$</td><td>0.371</td><td>0.377</td><td>0.383</td><td>0.389</td><td>0.399</td><td>0.409</td><td>查表，趋近 0.48</td><td>$\approx0.485$</td></tr></tbody></table></div>
 <blockquote><p>【坑】表值对应 <strong>20° 全齿高</strong>；若题目给 25° 或短齿，$Y$ 不同。考试若只给 $z$ 不给表，通常允许用近似值或直接给 $Y$。</p></blockquote>
-<p><img alt="图 L5-6 Lewis 齿形系数 $Y$（20° 全齿高，Shigley 表 14-2）：齿数越多 $Y$ 越大（L5 课件）" src="figs/ppt/L5_ytable.jpg"></p>
+<p><img alt="图 L5-6 Lewis 齿形系数 $Y$（20° 全齿高，Shigley 表 14-2）：齿数越多 $Y$ 越大（L5 课件）" src="assets/figs/ppt/L5_ytable.jpg"></p>
 <p><em>图 L5-6 Lewis 齿形系数 $Y$（20° 全齿高，Shigley 表 14-2）：齿数越多 $Y$ 越大（L5 课件）</em></p>
 <h3 id="sec-184">3.5 例题 1：求最小齿宽（Prob. 14-5）</h3>
 <p>已知：钢制直齿小齿轮，$m=1$ mm，$z=16$，$20^\circ$ 全齿高，传递 $P=0.15$ kW、$n=400$ rpm，许用弯曲应力 $150$ MPa（已含安全系数）。求最小齿宽 $b_f$。</p>
@@ -1076,7 +1078,7 @@ K_v=\frac{3.56+\sqrt{1.047}}{3.56}=1.287$$</div>
 <blockquote><p>【说明】2023 期末 Q10 给的是 $T_m=10$ mNm、$\omega_m=100$ rpm、$d_p=20$ mm、$m=1$ 这种"轻载"数据，算出的 $W_t=T/r=10/10=1$ N，按公式算出的 $b_f$ 只有零点几毫米。这不是算错，而是说明<strong>轻载下齿宽由结构/工艺决定，不由强度决定</strong>——答题时写一句"强度不控制，取结构最小值"即可。</p></blockquote>
 <hr>
 <h2 id="sec-186">4 接触强度（齿面点蚀）</h2>
-<p><img alt="图 L5-7 齿面磨损/点蚀的宏观形貌：渐进失效，先出现噪声（L5 课件）" src="figs/ppt/L5_pitting.jpg"></p>
+<p><img alt="图 L5-7 齿面磨损/点蚀的宏观形貌：渐进失效，先出现噪声（L5 课件）" src="assets/figs/ppt/L5_pitting.jpg"></p>
 <p><em>图 L5-7 齿面磨损/点蚀的宏观形貌：渐进失效，先出现噪声（L5 课件）</em></p>
 <h3 id="sec-187">4.1 Hertz 模型（课件 43 页）</h3>
 <p>把两齿面在节点处的接触看成<strong>两个圆柱体受压</strong>，最大接触应力在表面下：</p>
@@ -1120,7 +1122,7 @@ K_v=\frac{3.56+\sqrt{1.047}}{3.56}=1.287$$</div>
 <hr>
 <h2 id="sec-192">7 与 L4 的衔接</h2>
 <ul><li>L4 定<strong>几何</strong>（$m,z,d,C$）；</li><li>L5 定<strong>齿宽 $b_f$ 与材料/热处理</strong>（弯曲 + 接触校核）；</li><li>两者联立才是完整设计：先由传动比定 $z$，由弯曲强度初定 $m$，由接触强度校核 $d$，最后回到 L4 出图。</li></ul>
-<p><img alt="齿轮受力与速度系数" src="figs/fig4_gearforce.png"></p>
+<p><img alt="齿轮受力与速度系数" src="assets/figs/fig4_gearforce.png"></p>
 <ul><li>左：法向力 $W_n$ 分解为 $W_t$、$W_r$，压力角 $\phi$ 决定二者比例；</li><li>右：四种加工方式的 $K_v$–$V$ 曲线（SI），精度越高动载越小。</li></ul>
 <hr>
 <h2 id="sec-193">8 易错点清单</h2>
@@ -1277,7 +1279,7 @@ K_v=\frac{3.56+\sqrt{1.047}}{3.56}=1.287$$</div>
 <p><strong>1.（5 分）</strong></p>
 <ol><li>连 $A_1A_2$、$A_1A_3$，分别作两条中垂线；</li><li>两中垂线<strong>交点</strong>即固定铰 $A_0$（$A$ 点绕 $A_0$ 作圆弧，圆心必在两条中垂线上）；</li><li>连 $B_1B_2$、$B_1B_3$，同法得 $B_0$；</li><li>连 $A_1A_0$、$B_1B_0$ 得两连架杆，$A_1B_1$ 为连杆；</li><li>检查 $A_0,B_0$ 是否在允许区域内，并保留作图线。</li></ol>
 <p><strong>2.（2 分）</strong> 4 个自由选择：$A$、$B$ 两个动铰在连杆上的位置各 2 个（$x,y$）。固定铰由交点唯一确定，没有自由选择。</p>
-<p><img alt="图（自绘）Q4 的作图结果：$A_1A_2A_3$ 与 $B_1B_2B_3$ 各自的外接圆，圆心就是固定铰" src="figs/fig7_pb3.png"></p>
+<p><img alt="图（自绘）Q4 的作图结果：$A_1A_2A_3$ 与 $B_1B_2B_3$ 各自的外接圆，圆心就是固定铰" src="assets/figs/fig7_pb3.png"></p>
 <p><em>图（自绘）Q4 的作图结果：$A_1A_2A_3$ 与 $B_1B_2B_3$ 各自的外接圆，圆心就是固定铰</em></p>
 <p><strong>3.（3 分）</strong> 本题坐标算出的结果为 $A_0\approx(-14.5,\ 99.5)$、$B_0\approx(190.9,\ -38.9)$——两个固定铰都远远落在点群之外，说明所选的动铰位置不合适，必须<strong>重新选动铰位置</strong>（改那 4 个自由选择）再做一次；因为固定铰的位置完全由"动铰三位置所确定的圆"决定，动铰一改，圆心就跟着变。也可退而求其次：固定一端（只做 2 位置导引）或允许第三位置有小误差。</p>
 <hr>
@@ -1444,9 +1446,13 @@ F_0=448\ \text{N}$$</div>
 </div>
 <footer>依据官方课件 L1–L5 与 2023 期末卷整理 · 【课件】为原文，【补充】已单独标注</footer>
 <script>
-window.MathJax = { tex: { inlineMath: [["$","$"]], displayMath: [["$$","$$"]] }, svg: { fontCache: "global" }, options: { skipHtmlTags: ["script","noscript","style","textarea","pre","code"] } };
+window.MathJax = {
+  tex: { inlineMath: [["$", "$"]], displayMath: [["$$", "$$"]] },
+  svg: { fontCache: "global" },
+  options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
+};
 </script>
-<script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+<script async src="vendor/mathjax/tex-svg.js"></script>
 <script>
 document.querySelectorAll(".content img").forEach(function (im) {
   im.title = "点击查看原图";
