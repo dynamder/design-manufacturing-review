@@ -1,0 +1,14 @@
+{
+  "name": "lustre-sample",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deps": "gleam deps download && node scripts/strip-priv.mjs",
+    "build": "npm run deps && gleam build && node scripts/bundle.mjs",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "check": "gleam format --check src && gleam build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}
