@@ -1,0 +1,19 @@
+# 本地缓存 / 虚拟环境
+.cache/
+.mplconfig/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.log
+*.tmp

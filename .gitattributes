@@ -1,0 +1,12 @@
+# 文本文件统一按 LF 存储，检出时由各平台处理
+* text=auto
+
+# 图片是二进制，不做行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg -text
+
+# 第三方压缩代码保持原样
+vendor/** -text
