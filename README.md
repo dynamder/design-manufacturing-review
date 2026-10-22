@@ -6,6 +6,14 @@
 - 内容：L1 机构基础、L2 四杆分析与综合、L3 电机与传动、L4 设计流程/材料/齿轮几何、L5 齿轮受力与强度，附公式速查、模拟卷与答案。
 - 特性：侧边目录、表格、代码块、SVG 公式、图片点击放大、打印/存 PDF 样式、移动端适配。
 
+## 在线访问
+
+- 网页：<https://dynamder.github.io/design-manufacturing-review/>
+- 仓库：<https://github.com/dynamder/design-manufacturing-review>
+
+GitHub Pages 直接托管 `main` 分支根目录（legacy 构建），`.nojekyll` 关闭 Jekyll。
+推送到 `main` 后 GitHub 会自动重新发布，通常 1 分钟内生效。
+
 ## 快速开始
 
 直接阅读：
@@ -88,10 +96,12 @@ npm run figs            # 重新生成自绘插图（需 numpy + matplotlib）
 
 ## 发布 / 备份
 
-整个目录就是一个可独立运行的站点。最简发布方式：
+整个目录就是一个可独立运行的站点。发布渠道：
 
-- 直接压缩整个目录发给别人，对方解压后双击 `index.html`；
-- 或部署到 GitHub Pages / 任意静态托管：入口是根目录的 `index.html`；
+- **GitHub Pages（当前使用）**：`main` 分支根目录，推送后自动发布到
+  <https://dynamder.github.io/design-manufacturing-review/>；根目录的 `.nojekyll` 让 GitHub 原样托管静态文件。
+- **离线分享**：压缩整个目录发给别人，对方解压后双击 `index.html`。
+- **其他静态托管**：入口是根目录的 `index.html`。
 - 如果只想带最小文件集，复制 `index.html` + `assets/` + `vendor/` 即可。
 
 `index.html` 是生成文件，请不要直接编辑；改动请落在 `src/`，然后 `npm run build`。
@@ -103,8 +113,10 @@ npm run figs            # 重新生成自绘插图（需 numpy + matplotlib）
 
 ```bash
 npm run check
+npm run build
 git add -A
 git commit -m "更新 L3 复习内容"
+git push
 ```
 
 ## 说明
