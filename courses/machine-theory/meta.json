@@ -1,0 +1,11 @@
+{
+  "slug": "machine-theory",
+  "title": "机械原理",
+  "code": "ME-203",
+  "summary": "连杆 · 凸轮 · 齿轮 · 轮系",
+  "tags": ["连杆", "凸轮", "齿轮", "轮系"],
+  "status": "planned",
+  "order": 4,
+  "maintainers": [],
+  "updated": ""
+}

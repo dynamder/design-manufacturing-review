@@ -1,0 +1,13 @@
+{
+  "name": "catalog-facade",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deps": "gleam deps download && node scripts/strip-priv.mjs",
+    "build": "node ../scripts/gen-catalog.mjs && gleam build && node scripts/bundle.mjs",
+    "check": "gleam format --check src && gleam build"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>页面不存在 · 课程资料库</title>
+    <style>
+      body {
+        margin: 0;
+        background: #fff;
+        color: #161616;
+        font: 14px/1.6 "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei",
+          system-ui, sans-serif;
+      }
+
+      .notfound {
+        max-width: 640px;
+        margin: 96px auto;
+        padding: 0 24px;
+      }
+
+      .notfound h1 {
+        margin: 0 0 8px;
+        font-size: 24px;
+        font-weight: 650;
+      }
+
+      .notfound p {
+        margin: 0 0 20px;
+        color: #6b6b6b;
+      }
+
+      .notfound a {
+        color: #1f6feb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="notfound">
+      <h1>这页没有。</h1>
+      <p>链接可能旧了，或者这一章已经被合并、改名。</p>
+      <p><a id="home" href="./">← 回到课程资料库</a></p>
+    <script>
+      (function () {
+        var path = location.pathname;
+        if (path.indexOf("/design-manufacturing-review/") === 0) {
+          document.getElementById("home").href = "/design-manufacturing-review/";
+        } else if (
+          location.hostname === "127.0.0.1" ||
+          location.hostname === "localhost"
+        ) {
+          document.getElementById("home").href = "/";
+        }
+      })();
+    </script>
+    </div>
+  </body>
+</html>
