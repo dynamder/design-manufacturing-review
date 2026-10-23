@@ -41,6 +41,61 @@ html:not(.js) {
     "Liberation Mono", monospace;
 }
 
+/* Dark mode: mdbook picks this theme when the system prefers dark
+   (preferred-dark-theme = "coal" in book.toml). The palette mirrors the
+   facade's dark tokens. */
+.coal {
+  --bg: #0f0f0f;
+  --fg: #e6e6e6;
+
+  --sidebar-bg: #141414;
+  --sidebar-fg: #e6e6e6;
+  --sidebar-active: #7aa7ff;
+  --sidebar-spacer: #262626;
+
+  --sidebar-non-existant: #6b6b6b;
+  --scrollbar: #4a4a4a;
+  --icons: #8a8a8a;
+  --icons-hover: #e6e6e6;
+  --links: #7aa7ff;
+  --inline-code-color: #e6e6e6;
+
+  --theme-popup-bg: #161616;
+  --theme-popup-border: #383838;
+  --theme-hover: #1f1f1f;
+  --quote-bg: #161616;
+  --quote-border: #262626;
+  --warning-border: #f0b429;
+  --table-border-color: #262626;
+  --table-header-bg: #1c1c1c;
+  --table-alternate-bg: #141414;
+  --searchbar-border-color: #383838;
+  --searchbar-bg: #161616;
+  --searchbar-fg: #e6e6e6;
+  --searchbar-shadow-color: #383838;
+  --searchresults-header-fg: #a3a3a3;
+  --searchresults-border-color: #262626;
+  --searchresults-li-bg: #1a2433;
+  --search-mark-bg: #4a3c00;
+  --color-scheme: dark;
+
+  --mono-font: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas,
+    "Liberation Mono", monospace;
+}
+
+html {
+  scrollbar-color: var(--scrollbar) transparent;
+  scrollbar-width: thin;
+}
+
+::selection {
+  background: rgba(31, 111, 235, 0.22);
+}
+
+.coal ::selection {
+  background: rgba(122, 167, 255, 0.28);
+}
+
 /* The facade and the book share one typographic voice: system sans. */
 body {
   font-family: "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei",
@@ -79,8 +134,9 @@ body {
   font-size: 13.5px;
 }
 
-/* The book has no theme switcher: it is pinned to the light theme so it
-   never disagrees with the facade. */
+/* The book has no visible theme switcher: it follows the system preference
+   via `default-theme` / `preferred-dark-theme`, so it never disagrees with
+   the facade. */
 #mdbook-theme-toggle,
 #mdbook-theme-list {
   display: none !important;
@@ -104,18 +160,18 @@ body {
   align-items: center;
   height: 32px;
   padding: 0 12px;
-  border: 1px solid #d4d4d4;
+  border: 1px solid var(--table-border-color);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--bg);
   backdrop-filter: blur(8px);
-  color: #161616;
+  color: var(--fg);
   font-size: 12px;
   text-decoration: none;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
 .sn-back:hover {
-  border-color: #a3a3a3;
+  border-color: var(--sidebar-non-existant);
 }
 
 @media print {

@@ -128,6 +128,22 @@ palette     命令面板（覆盖层）
 mdbook 侧只做主题对齐、返回胶囊和存储拦截；不覆盖 `index.hbs`，避免
 mdbook 升级时整个主题断掉。
 
+## 6.1 深浅色
+
+两边都不提供主题开关，统一跟随 `prefers-color-scheme`：
+
+- 门面：`site/public/styles.css` 里一套语义变量，深色用
+  `@media (prefers-color-scheme: dark)` 覆盖。
+- 书：`default-theme = "light"`、`preferred-dark-theme = "coal"`，
+  `theme/course.css` 覆盖 `.coal` 的变量，和门面同一套颜色。
+- `theme/course.js` 拦掉 mdbook 对 `mdbook-theme` / `mdbook-sidebar` 的写入，
+  并忽略设备上残留的 `mdbook-theme`，保证书不会单独停在另一个模式。
+- 结果：系统亮两边亮，系统暗两边暗；不存在“门面亮、书暗”的中间态。
+
+![深色门面](screenshots/dark-home.png)
+
+![深色书页](screenshots/dark-book.png)
+
 ## 7. 已知取舍
 
 - **门面首屏是 JS 渲染的。** 没有做构建期预渲染；`<noscript>` 里有直接进书的链接。
@@ -136,6 +152,8 @@ mdbook 升级时整个主题断掉。
 - **没有阅读进度。** 这是“不存储”的直接代价。如果以后要加，它是纯增量：书端
   一个脚本 + 门面读取，不动现在的结构。
 - **mdbook 顶栏保留原样。** 只改了字体、颜色和标题字号；没有重写它的布局。
+- **没有手动主题切换。** 跟随系统是“不写存储”下唯一能同时覆盖门面和书的做法；
+  要加开关，就得把选择放进 URL 或存储，前者会污染分享链接，后者违反约定。
 
 ## 8. 下一步（如果继续做）
 

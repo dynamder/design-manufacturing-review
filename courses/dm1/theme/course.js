@@ -7,10 +7,18 @@
 // holds inside a book.
 (function () {
   try {
-    var original = Storage.prototype.setItem;
+    var originalSet = Storage.prototype.setItem;
     Storage.prototype.setItem = function (key, value) {
       if (key === "mdbook-theme" || key === "mdbook-sidebar") return;
-      return original.call(this, key, value);
+      return originalSet.call(this, key, value);
+    };
+
+    // Ignore any theme left on the device: the book follows the system
+    // preference, the same way the facade does.
+    var originalGet = Storage.prototype.getItem;
+    Storage.prototype.getItem = function (key) {
+      if (key === "mdbook-theme") return null;
+      return originalGet.call(this, key);
     };
   } catch (_) {}
 })();

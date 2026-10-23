@@ -1,17 +1,51 @@
 :root {
+  color-scheme: light dark;
+
   --bg: #ffffff;
+  --surface: #ffffff;
   --rail: #fafafa;
+  --hover: #f2f2f2;
   --ink: #161616;
   --muted: #6b6b6b;
   --faint: #8a8a8a;
   --line: #e6e6e6;
+  --line-soft: #f0f0f0;
   --line-strong: #d4d4d4;
   --accent: #1f6feb;
   --mark: #fff2a8;
+  --mark-ink: #161616;
+  --backdrop: rgba(22, 22, 22, 0.22);
+  --button-bg: #161616;
+  --button-fg: #ffffff;
+  --button-hover: #000000;
+  --shadow: rgba(0, 0, 0, 0.16);
   --sans: "Inter", "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui,
     -apple-system, sans-serif;
   --mono: ui-monospace, "SFMono-Regular", "Cascadia Code", Consolas,
     "Liberation Mono", monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --surface: #161616;
+    --rail: #141414;
+    --hover: #1f1f1f;
+    --ink: #e6e6e6;
+    --muted: #a3a3a3;
+    --faint: #7d7d7d;
+    --line: #262626;
+    --line-soft: #1e1e1e;
+    --line-strong: #383838;
+    --accent: #7aa7ff;
+    --mark: #4a3c00;
+    --mark-ink: #ffe58f;
+    --backdrop: rgba(0, 0, 0, 0.5);
+    --button-bg: #e6e6e6;
+    --button-fg: #0f0f0f;
+    --button-hover: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.5);
+  }
 }
 
 * {
@@ -21,6 +55,21 @@
 html,
 body {
   height: 100%;
+}
+
+html {
+  scrollbar-color: var(--line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+::selection {
+  background: rgba(31, 111, 235, 0.22);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background: rgba(122, 167, 255, 0.28);
+  }
 }
 
 body {
@@ -85,7 +134,7 @@ a {
   padding: 0 8px 0 10px;
   border: 1px solid var(--line-strong);
   border-radius: 6px;
-  background: #fff;
+  background: var(--surface);
   color: var(--faint);
   font-size: 12.5px;
   text-align: left;
@@ -93,7 +142,7 @@ a {
 }
 
 .search-trigger:hover {
-  border-color: #b8b8b8;
+  border-color: var(--faint);
   color: var(--muted);
 }
 
@@ -181,13 +230,13 @@ a {
 }
 
 .rail-item:hover {
-  background: #f2f2f2;
+  background: var(--hover);
   color: var(--ink);
 }
 
 .rail-item.is-selected {
   border-left-color: var(--ink);
-  background: #fff;
+  background: var(--surface);
   color: var(--ink);
 }
 
@@ -237,14 +286,14 @@ a {
   padding: 0 8px;
   border: 1px solid var(--line-strong);
   border-radius: 4px;
-  background: #fff;
+  background: var(--surface);
   color: var(--ink);
   font-size: 11.5px;
   cursor: pointer;
 }
 
 .chip:hover {
-  border-color: #b8b8b8;
+  border-color: var(--faint);
 }
 
 .chip-x {
@@ -360,7 +409,7 @@ a {
   justify-content: space-between;
   gap: 16px;
   padding: 6px 4px 6px 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid var(--line-soft);
   color: var(--ink);
   text-decoration: none;
 }
@@ -437,16 +486,16 @@ a {
 .button {
   height: 30px;
   padding: 0 12px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--button-bg);
   border-radius: 4px;
-  background: var(--ink);
-  color: #fff;
+  background: var(--button-bg);
+  color: var(--button-fg);
   font-size: 12.5px;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #000;
+  background: var(--button-hover);
 }
 
 .empty-detail {
@@ -469,7 +518,7 @@ a {
   align-items: flex-start;
   justify-content: center;
   padding: 10vh 16px 16px;
-  background: rgba(22, 22, 22, 0.22);
+  background: var(--backdrop);
 }
 
 .palette {
@@ -480,8 +529,8 @@ a {
   overflow: hidden;
   border: 1px solid var(--line-strong);
   border-radius: 8px;
-  background: #fff;
-  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.16);
+  background: var(--surface);
+  box-shadow: 0 18px 48px var(--shadow);
 }
 
 .palette-input-row {
@@ -546,7 +595,7 @@ a {
 }
 
 .palette-row.is-active {
-  background: #f2f2f2;
+  background: var(--hover);
   box-shadow: inset 2px 0 0 var(--ink);
 }
 
@@ -613,7 +662,7 @@ mark.hit {
   padding: 0 1px;
   border-radius: 2px;
   background: var(--mark);
-  color: inherit;
+  color: var(--mark-ink);
 }
 
 body:has(.palette-layer) {
@@ -646,7 +695,7 @@ body:has(.palette-layer) {
     position: sticky;
     top: 0;
     z-index: 10;
-    background: #fff;
+    background: var(--bg);
   }
 
   .search-trigger {

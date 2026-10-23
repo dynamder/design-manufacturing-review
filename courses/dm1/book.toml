@@ -9,6 +9,7 @@ build-dir = "book"
 
 [output.html]
 default-theme = "light"
+preferred-dark-theme = "coal"
 mathjax-support = false
 git-repository-url = "https://github.com/dynamder/design-manufacturing-review"
 edit-url-template = "https://github.com/dynamder/design-manufacturing-review/edit/main/courses/dm1/src/{path}"

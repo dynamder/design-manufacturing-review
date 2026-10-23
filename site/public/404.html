@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light" />
+    <meta name="color-scheme" content="light dark" />
     <title>页面不存在 · 课程资料库</title>
     <style>
       body {
@@ -33,6 +33,21 @@
 
       .notfound a {
         color: #1f6feb;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #0f0f0f;
+          color: #e6e6e6;
+        }
+
+        .notfound p {
+          color: #a3a3a3;
+        }
+
+        .notfound a {
+          color: #7aa7ff;
+        }
       }
     </style>
   </head>

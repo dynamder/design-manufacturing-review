@@ -3,8 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0f0f0f"
+      media="(prefers-color-scheme: dark)"
+    />
     <title>课程资料库</title>
     <meta
       name="description"
@@ -18,7 +27,7 @@
     <noscript>
       <div style="max-width: 640px; margin: 80px auto; padding: 0 24px">
         <h1 style="font-size: 22px">课程资料库</h1>
-        <p style="color: #6b6b6b">
+        <p style="color: inherit; opacity: 0.7">
           这个目录由 Gleam + Lustre 渲染，需要启用 JavaScript。每本书本身是
           mdbook 生成的静态页面，也可以直接访问：
         </p>
