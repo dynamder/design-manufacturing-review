@@ -1,0 +1,11 @@
+{
+  "slug": "materials",
+  "title": "材料力学",
+  "code": "ME-201",
+  "summary": "应力 · 应变 · 强度 · 刚度",
+  "tags": ["应力", "应变", "强度"],
+  "status": "planned",
+  "order": 3,
+  "maintainers": [],
+  "updated": ""
+}

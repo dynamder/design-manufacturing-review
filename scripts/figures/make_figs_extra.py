@@ -14,7 +14,7 @@ plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
 plt.rcParams["axes.unicode_minus"] = False
 plt.rcParams["figure.dpi"] = 160
 
-OUT = os.path.join(_ROOT, "assets", "figs")
+OUT = os.path.join(_ROOT, "courses", "dm1", "src", "assets", "figs")
 os.makedirs(OUT, exist_ok=True)
 
 

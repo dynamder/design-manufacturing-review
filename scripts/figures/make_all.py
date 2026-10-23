@@ -4,7 +4,7 @@
     python scripts/figures/make_all.py
 
 依赖：numpy、matplotlib；字体使用系统里的 Microsoft YaHei / SimHei（缺失时退回 DejaVu Sans）。
-输出：assets/figs/*.png
+输出：courses/dm1/src/assets/figs/*.png
 """
 import os
 import runpy
@@ -36,7 +36,7 @@ def main():
         path = os.path.join(HERE, name)
         print(f"==> {name}")
         runpy.run_path(path, run_name="__main__")
-    print(f"\n完成：图片已写入 {os.path.join(os.path.dirname(os.path.dirname(HERE)), 'assets', 'figs')}")
+    print(f"\n完成：图片已写入 {os.path.join(os.path.dirname(os.path.dirname(HERE)), 'courses', 'dm1', 'src', 'assets', 'figs')}")
     return 0
 
 

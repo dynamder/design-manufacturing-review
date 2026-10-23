@@ -1,15 +1,15 @@
 {
-  "name": "design-manufacturing-review",
+  "name": "course-library",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "设计与制造 1（L1–L5）复习网页：Markdown -> 离线可用的单页站点",
+  "description": "按课程组织的复习资料：Gleam + Lustre 门面，每门课一本 mdbook",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "dev": "node scripts/dev.mjs",
+    "catalog": "node scripts/gen-catalog.mjs",
+    "assemble": "node scripts/assemble.mjs",
     "serve": "node scripts/serve.mjs",
-    "check": "node scripts/check.mjs",
-    "check:symbols": "python scripts/check_symbols.py",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
     "figs": "python scripts/figures/make_all.py"
   },
   "engines": {

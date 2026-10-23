@@ -18,15 +18,15 @@
 
 | 课次 | 课件标题 | 主要内容 | 对应文件 |
 | --- | --- | --- | --- |
-| **L1** | Mechanism in general, 4-bar linkages | 运动简图、自由度、传动角与死点、Grashof、类型与反演、图解/解析综合概览 | `src/content/01_L1_机构与四杆基础.md` |
-| **L2** | Design and analysis of a 4-bar linkage | 位置/速度/加速度分析、图解法、二元组解析综合、计算框架、作业 2 | `src/content/02_L2_四杆分析与综合.md` |
-| **L3** | Motors and transmission | 直流电机模型、功率效率、传动比、齿轮类型、渐开线与几何、轮系、行星、谐波、带与链 | `src/content/03_L3_电机与传动.md` |
-| **L4** | Gears, geometry design（+ 设计流程与材料） | 设计流程、选材、强度与刚度、应力–应变、齿轮几何与设计步骤 | `src/content/04_L4_设计流程材料与齿轮几何.md` |
-| **L5** | Gears, force and stress | 齿面受力、失效模式、Lewis 弯曲、$K_v$、Hertz 接触、AGMA 概览 | `src/content/05_L5_齿轮受力与强度.md` |
-| 汇总 | — | 一页公式表（按 L1–L5 排） | `src/content/06_公式速查.md` |
-| 练习 | — | 100 分模拟卷（100 分钟） | `src/content/07_模拟卷.md` |
-| 练习 | — | 模拟卷答案 + 各章自测答案 | `src/content/08_模拟卷答案.md` |
-| 附录 | L6 内容 | 带/链设计（欧拉、包角、多边形效应） | `src/content/09_附录_带与链.md` |
+| **L1** | Mechanism in general, 4-bar linkages | 运动简图、自由度、传动角与死点、Grashof、类型与反演、图解/解析综合概览 | `src/ch01.md` |
+| **L2** | Design and analysis of a 4-bar linkage | 位置/速度/加速度分析、图解法、二元组解析综合、计算框架、作业 2 | `src/ch02.md` |
+| **L3** | Motors and transmission | 直流电机模型、功率效率、传动比、齿轮类型、渐开线与几何、轮系、行星、谐波、带与链 | `src/ch03.md` |
+| **L4** | Gears, geometry design（+ 设计流程与材料） | 设计流程、选材、强度与刚度、应力–应变、齿轮几何与设计步骤 | `src/ch04.md` |
+| **L5** | Gears, force and stress | 齿面受力、失效模式、Lewis 弯曲、$K_v$、Hertz 接触、AGMA 概览 | `src/ch05.md` |
+| 汇总 | — | 一页公式表（按 L1–L5 排） | `src/cheatsheet.md` |
+| 练习 | — | 100 分模拟卷（100 分钟） | `src/exam.md` |
+| 练习 | — | 模拟卷答案 + 各章自测答案 | `src/exam-answers.md` |
+| 附录 | L6 内容 | 带/链设计（欧拉、包角、多边形效应） | `src/appendix.md` |
 | 插图 | — | 从 L1–L5 课件提取的关键图（约 50 张） | `assets/figs/ppt/` |
 
 `index.html` 是全部内容的排版合并版，双击即可阅读；图片和 MathJax 都在本地，断网也能正常显示公式；`Ctrl+P` 可打印或存 PDF（打印前建议在浏览器里等公式渲染完）。
