@@ -5,7 +5,7 @@
 在课程之间导航、筛选、跳章节。
 
 - 在线：<https://dynamder.github.io/design-manufacturing-review/>
-- 当前课程：设计与制造 1（讲义 / 速查 / 真题 / 附录）
+- 当前课程：工业互联网基础、设计与制造 1（各含讲义 / 速查 / 真题 / 附录）
 - 门面不渲染正文；正文由每本书自己的 mdbook 负责
 
 ![课程资料库](docs/screenshots/home.png)

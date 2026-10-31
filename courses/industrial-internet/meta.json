@@ -1,0 +1,20 @@
+{
+  "slug": "industrial-internet",
+  "title": "工业互联网基础",
+  "code": "II-201",
+  "summary": "概念 · 架构 · 网络 · 平台 · 安全",
+  "tags": [
+    "工业互联网",
+    "标识解析",
+    "5G",
+    "TSN",
+    "数字孪生",
+    "安全"
+  ],
+  "status": "active",
+  "order": 1,
+  "maintainers": [
+    "@dynamder"
+  ],
+  "updated": "2026-10-31"
+}
