@@ -48,7 +48,7 @@
    | `maintainers` | GitHub handle 列表，显示在课程页脚 |
    | `updated` | 门面显示的“更新”日期，手动维护 |
 
-2. 建 `book.toml`。复制 `courses/dm1/book.toml`，改：
+2. 建 `book.toml`。复制 `courses/industrial-internet/book.toml`，改：
 
    ```toml
    [book]
@@ -78,7 +78,7 @@
 
    `开始 / 讲义 / 速查 / 真题 / 附录` 会映射成门面的标签和筛选。
 
-4. 复制 `courses/dm1/theme/`（返回胶囊 + 主题），或者暂时不放；没有主题也能构建。
+4. 复制 `courses/industrial-internet/theme/`（返回胶囊 + 主题），或者暂时不放；没有主题也能构建。
 
 5. `npm run build`，确认左栏出现新课程、右栏能点进章节。
 

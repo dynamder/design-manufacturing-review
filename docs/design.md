@@ -104,7 +104,7 @@ palette     命令面板（覆盖层）
 门面：没有 `localStorage`、没有 cookie、没有进度上报。浏览器里能看到的只有 URL。
 
 书：mdbook 自己会往 `localStorage` 写 `mdbook-theme` / `mdbook-sidebar`。
-`courses/dm1/theme/course.js` 把这两个键的写入拦掉了，保证“这个站不在你的设备上
+`courses/industrial-internet/theme/course.js` 把这两个键的写入拦掉了，保证“这个站不在你的设备上
 留东西”。
 
 删掉的旧功能：阅读进度、上次读到哪、百分比进度条、最近访问。它们都依赖存储，

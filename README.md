@@ -5,7 +5,7 @@
 在课程之间导航、筛选、跳章节。
 
 - 在线：<https://dynamder.github.io/design-manufacturing-review/>
-- 当前课程：工业互联网基础、设计与制造 1（各含讲义 / 速查 / 真题 / 附录）
+- 当前课程：工业互联网基础（讲义 / 速查 / 练习 / 附录）
 - 门面不渲染正文；正文由每本书自己的 mdbook 负责
 
 ![课程资料库](docs/screenshots/home.png)
@@ -18,8 +18,8 @@
 ┌──────────────────────────────────────────────────────────────────────┐
 │ 课程资料库        [ 搜索课程、章节或动作        Ctrl K ]        GitHub │
 ├────────────────────┬─────────────────────────────────────────────────┤
-│ 课程 5             │  设计与制造 1                                   │
-│ ▌设计与制造 1   10 │  DM-101 · 10 章 · 更新 2025-10-24               │
+│ 课程 5             │  工业互联网基础                                 │
+│ ▌工业互联网基础 11 │  II-201 · 11 页 · 更新 2026-10-31               │
 │  理论力学   待认领 │  机构 · 四杆 · 电机 · 齿轮                      │
 │  材料力学   待认领 │  [开始] [讲义] [速查] [真题] [附录]             │
 │  机械原理   待认领 │  ─────────────────────────────────────────────    │
@@ -51,7 +51,7 @@
 ```text
 .
 ├── courses/
-│   ├── dm1/                    # 一门课 = 一本 mdbook
+│   ├── industrial-internet/    # 一门课 = 一本 mdbook
 │   │   ├── meta.json           # 门面读：标题、代码、标签、状态、维护者
 │   │   ├── book.toml           # mdbook 配置
 │   │   ├── theme/              # 与门面对齐的 mdbook 主题 + 返回胶囊
@@ -125,7 +125,7 @@ npm run dev        # build + serve
    有 `src/SUMMARY.md` 的课会被构建；`status: "planned"` 且没有 SUMMARY 的
    课只出现在门面里，显示“待认领”，主按钮变成 GitHub Issue 认领入口。
 
-2. 写 `book.toml`（可以直接复制 `courses/dm1/book.toml`，改标题和
+2. 写 `book.toml`（可以直接复制 `courses/industrial-internet/book.toml`，改标题和
    `edit-url-template`）。
 
 3. 写 `src/SUMMARY.md`。**Part 标题决定门面里的内容类型标签**：
@@ -149,7 +149,7 @@ npm run dev        # build + serve
 
 | 参数 | 含义 | 例子 |
 | --- | --- | --- |
-| `?c=<slug>` | 选中的课程 | `?c=dm1` |
+| `?c=<slug>` | 选中的课程 | `?c=industrial-internet` |
 | `?q=<text>` | 打开命令面板并带上查询 | `?q=齿轮` |
 | `?kind=<kind>` | 只看含某类内容的课程 | `?kind=exam` |
 
