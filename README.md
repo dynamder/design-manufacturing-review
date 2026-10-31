@@ -1,128 +1,186 @@
-# 设计与制造 1 · L1–L5 复习网页
+# 课程资料库
 
-注意：这是个人自用的复习网页，并不准备长期维护。
+按课程组织的复习资料：**每门课是一本独立的 mdbook**，外面套一个用
+[Gleam](https://gleam.run/) + [Lustre](https://lustre.build/) 写的门面，负责
+在课程之间导航、筛选、跳章节。
 
-把 `src/content/` 里的 Markdown 复习资料构建成一个**单页复习网站**。构建产物 `index.html`
-不依赖服务器、不依赖外网：图片在 `assets/`，公式渲染器 MathJax 在 `vendor/`，双击即可阅读。
+- 在线：<https://dynamder.github.io/design-manufacturing-review/>
+- 当前课程：工业互联网基础、设计与制造 1（各含讲义 / 速查 / 真题 / 附录）
+- 门面不渲染正文；正文由每本书自己的 mdbook 负责
 
-- 内容：L1 机构基础、L2 四杆分析与综合、L3 电机与传动、L4 设计流程/材料/齿轮几何、L5 齿轮受力与强度，附公式速查、模拟卷与答案。
-- 特性：侧边目录、表格、代码块、SVG 公式、图片点击放大、打印/存 PDF 样式、移动端适配。
+![课程资料库](docs/screenshots/home.png)
 
-## 在线访问
+## 它长什么样
 
-- 网页：<https://dynamder.github.io/design-manufacturing-review/>
-- 仓库：<https://github.com/dynamder/design-manufacturing-review>
+左边是课程列表，右边是选中课程的目录地图；点任意章节直接进入 mdbook 的对应页。
 
-GitHub Pages 直接托管 `main` 分支根目录（legacy 构建），`.nojekyll` 关闭 Jekyll。
-推送到 `main` 后 GitHub 会自动重新发布，通常 1 分钟内生效。
-
-## 快速开始
-
-直接阅读：
-
-```text
-双击 index.html（Chrome / Edge / Firefox 均可，断网也能正常显示公式）
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│ 课程资料库        [ 搜索课程、章节或动作        Ctrl K ]        GitHub │
+├────────────────────┬─────────────────────────────────────────────────┤
+│ 课程 5             │  设计与制造 1                                   │
+│ ▌设计与制造 1   10 │  DM-101 · 10 章 · 更新 2025-10-24               │
+│  理论力学   待认领 │  机构 · 四杆 · 电机 · 齿轮                      │
+│  材料力学   待认领 │  [开始] [讲义] [速查] [真题] [附录]             │
+│  机械原理   待认领 │  ─────────────────────────────────────────────    │
+│  机械设计   待认领 │  讲义                                           │
+│                    │  L1 机构学基础与四杆机构                    ↗   │
+│                    │  L2 四杆机构的分析与综合                    ↗   │
+│                    │  ...                                            │
+└────────────────────┴─────────────────────────────────────────────────┘
 ```
 
-本地预览（可选，需要 Node.js ≥ 18）：
+命令面板把「找东西」和「做动作」收在同一个入口：`Ctrl K` / `⌘K` 打开，
+`/` 也可以。里面只有三类结果——**章节、课程、动作**。
 
-```bash
-npm run serve          # http://127.0.0.1:5173/
-```
+![命令面板](docs/screenshots/palette.png)
 
-修改内容后重新构建：
+深浅色跟随系统，门面和书一起切换（没有单独的开关）：
 
-```bash
-npm run build          # src/ -> index.html
-npm run dev            # 构建 + 本地预览 + 监听 src/ 自动重建
-```
+![深色模式](docs/screenshots/dark-home.png)
 
-构建、预览都只用 Node 内置模块，**没有 npm 依赖**，不需要 `npm install`。
-如果环境里 `npm` 不可用，也可以直接运行 `node scripts/build.mjs`、`node scripts/serve.mjs`。
+手机上退化成两屏：课程列表 → 课程地图，返回按钮回到列表。
+
+<p>
+  <img src="docs/screenshots/mobile.png" width="260" alt="手机课程列表" />
+  <img src="docs/screenshots/mobile-detail.png" width="260" alt="手机课程地图" />
+</p>
 
 ## 目录结构
 
 ```text
-ai-生成复习资料/
-├── index.html              # 构建产物：完整页面，可直接双击或分享
-├── src/
-│   ├── content/            # 章节源码（00–09，按文件名排序）
-│   ├── styles/main.css     # 全部样式（构建时内联进 HTML）
-│   ├── template.html       # 页面骨架（占位符 {{TITLE}}、{{TOC}} 等）
-│   └── site.json           # 标题、副标题、页脚等站点信息
-├── assets/
-│   └── figs/               # 插图（fig*.png 为自绘，ppt/ 为课件截图）
-├── vendor/
-│   └── mathjax/            # 本地 MathJax 3.2.2（离线公式渲染）
-├── scripts/
-│   ├── build.mjs           # 构建脚本（Markdown -> HTML）
-│   ├── dev.mjs             # 开发模式：监听 + 自动重建
-│   ├── serve.mjs           # 零依赖静态服务器
-│   ├── check.mjs           # 自检：图片引用、外网依赖、产物是否过期
-│   ├── check_symbols.py    # 符号约定检查（旧符号残留）
-│   └── figures/            # matplotlib 绘图脚本 + make_all.py
-├── legacy/
-│   └── 旧版_按主题/         # 旧版资料归档，不参与构建
-├── package.json
-├── .editorconfig
-├── .gitignore
-├── .gitattributes
-└── README.md
+.
+├── courses/
+│   ├── dm1/                    # 一门课 = 一本 mdbook
+│   │   ├── meta.json           # 门面读：标题、代码、标签、状态、维护者
+│   │   ├── book.toml           # mdbook 配置
+│   │   ├── theme/              # 与门面对齐的 mdbook 主题 + 返回胶囊
+│   │   └── src/
+│   │       ├── SUMMARY.md      # 目录（Part 标题决定内容类型）
+│   │       ├── ch01.md ...     # 章节
+│   │       └── assets/figs/    # 图片
+│   ├── mechanics/              # 只有 meta.json 的“待认领”课程
+│   └── ...
+├── site/                       # Gleam + Lustre 门面
+│   ├── src/                    # catalog / data / results / view / ffi
+│   ├── public/                 # index.html、styles.css、vendor/mathjax
+│   └── scripts/                # esbuild 打包、依赖处理
+├── scripts/                    # 构建编排 + 插图脚本
+├── docs/                       # 设计文档 + 截图
+├── legacy/                     # 旧版按主题归档，不参与构建
+└── dist/                       # 构建产物（被 .gitignore）
 ```
 
-## 写作约定
+## 构建
 
-- **章节**：`src/content/NN_名称.md`，`NN` 从 `00` 连续编号；构建时按文件名排序，`#` 一级标题自动成为章节和目录项，`##` 二级标题进入目录。
-- **图片**：放到 `assets/figs/`，Markdown 里写 `![说明](assets/figs/xxx.png)`；构建会检查图片是否存在。
-- **公式**：行内 `$...$`，独立公式 `$$...$$`，由本地 MathJax 渲染。
-- **支持语法**：标题、段落、粗体/斜体、行内代码、代码块、引用、有序/无序列表、表格、分隔线、图片、链接。
-- **不支持**：原始 HTML、脚注、任务列表等（构建器是轻量实现，够用即可）。
+依赖：
 
-新增一章：
+- [Gleam](https://gleam.run/) 1.19+
+- [mdbook](https://rust-lang.github.io/mdBook/) 0.5.4
+- Node.js 18+
+
+第一次先装门面的依赖：
 
 ```bash
-# 1. 新建 src/content/10_新章节.md，以 # 标题 开头
-# 2. 重新构建
-npm run build
+cd site
+gleam deps download
+npm install        # 只为 esbuild
+cd ..
 ```
 
-## 检查与维护
+然后：
 
 ```bash
-npm run check           # 检查图片引用、外网依赖、MathJax 是否就位、产物是否过期
-npm run check:symbols   # 检查旧符号 / 一字母多义残留（需 Python）
-npm run figs            # 重新生成自绘插图（需 numpy + matplotlib）
+npm run build      # catalog -> mdbook -> gleam -> bundle -> dist/
+npm run serve      # http://127.0.0.1:5173/
+npm run dev        # build + serve
 ```
 
-`npm run check` 通过即表示：页面引用的所有资源都在仓库内，**可以离线独立运行**。
+`npm run build` 做四件事：
 
-## 发布 / 备份
+1. `scripts/gen-catalog.mjs`：扫 `courses/*/meta.json` 和 `src/SUMMARY.md`，
+   生成 `catalog.json`（门面在构建期内联，运行时零请求）；
+2. 对每门有 `src/SUMMARY.md` 的课执行 `mdbook build`；
+3. `site/` 里 `gleam build` + esbuild 打成 `app.js`；
+4. `scripts/assemble.mjs` 把门面和所有书组装进 `dist/`。
 
-整个目录就是一个可独立运行的站点。发布渠道：
+## 加一门课
 
-- **GitHub Pages（当前使用）**：`main` 分支根目录，推送后自动发布到
-  <https://dynamder.github.io/design-manufacturing-review/>；根目录的 `.nojekyll` 让 GitHub 原样托管静态文件。
-- **离线分享**：压缩整个目录发给别人，对方解压后双击 `index.html`。
-- **其他静态托管**：入口是根目录的 `index.html`。
-- 如果只想带最小文件集，复制 `index.html` + `assets/` + `vendor/` 即可。
+1. 建目录 `courses/<slug>/`，写 `meta.json`：
 
-`index.html` 是生成文件，请不要直接编辑；改动请落在 `src/`，然后 `npm run build`。
+   ```json
+   {
+     "slug": "mechanics",
+     "title": "理论力学",
+     "code": "ME-102",
+     "summary": "静力学 · 运动学 · 动力学",
+     "tags": ["静力学", "运动学"],
+     "status": "active",
+     "order": 2,
+     "maintainers": ["@your-handle"],
+     "updated": "2025-10-24"
+   }
+   ```
 
-## 版本管理
+   有 `src/SUMMARY.md` 的课会被构建；`status: "planned"` 且没有 SUMMARY 的
+   课只出现在门面里，显示“待认领”，主按钮变成 GitHub Issue 认领入口。
 
-仓库已初始化 Git，`index.html` 与源文件一起纳入版本管理，因此克隆后无需构建即可阅读。
-每次改完内容建议：
+2. 写 `book.toml`（可以直接复制 `courses/dm1/book.toml`，改标题和
+   `edit-url-template`）。
 
-```bash
-npm run check
-npm run build
-git add -A
-git commit -m "更新 L3 复习内容"
-git push
-```
+3. 写 `src/SUMMARY.md`。**Part 标题决定门面里的内容类型标签**：
 
-## 说明
+   | Part | kind | 门面显示 |
+   | --- | --- | --- |
+   | `# 开始` | `intro` | 开始 |
+   | `# 讲义` | `notes` | 讲义 |
+   | `# 速查` | `cheatsheet` | 速查 |
+   | `# 真题` / `# 练习` | `exam` | 真题 |
+   | `# 附录` | `appendix` | 附录 |
 
-- 内容依据课程官方课件 L1–L5 与 2023 期末卷整理；【课件】为原文，【补充】已单独标注。
-- `legacy/旧版_按主题/` 是最早按主题拆分的版本，仅作归档，不参与构建。
-- MathJax 为第三方组件（Apache-2.0），来源与升级方法见 `vendor/mathjax/README.md`。
+   没有 `SUMMARY.md` 的课按“待认领”处理。
+
+4. `npm run build`。门面会自动出现新课程，不需要改 Gleam 代码。
+
+## 交互与 URL
+
+门面只做三件事：选课、筛选、跳章节。所有状态都在 URL 里，**不写任何本地存储**
+（没有 localStorage、没有 cookie、没有进度上报）：
+
+| 参数 | 含义 | 例子 |
+| --- | --- | --- |
+| `?c=<slug>` | 选中的课程 | `?c=dm1` |
+| `?q=<text>` | 打开命令面板并带上查询 | `?q=齿轮` |
+| `?kind=<kind>` | 只看含某类内容的课程 | `?kind=exam` |
+
+刷新会还原；把链接发给同学，对方看到的是同一屏。关闭面板会清掉 `?q=`。
+
+深浅色跟随系统，门面和书保持一致；没有主题开关（门面不写存储）。
+
+键盘只有四个：`Ctrl K` / `⌘K` / `/` 打开，`↑↓` 选择，`↵` 打开，`Esc` 关闭。
+其余动作（只看真题、复制链接、编辑、报告问题、打印）都在命令面板里，不铺快捷键。
+
+更完整的设计说明见 [docs/design.md](docs/design.md)。
+
+## 内容写作
+
+- 章节是 `courses/<slug>/src/*.md`，在 `SUMMARY.md` 里排序
+- 图片放 `src/assets/figs/`，Markdown 里写 `![说明](assets/figs/xxx.png)`
+- 公式用 `$...$` / `$$...$$`；书内使用仓库自带的 MathJax（`site/public/vendor/`），
+  不依赖 CDN
+- 打印/存 PDF 由 mdbook 自带样式负责
+- 书页右下角有一个返回门面的浮动胶囊，由 `theme/course.js` 注入
+
+## 部署
+
+`main` 分支推送到 GitHub Actions，构建 `dist/` 后由 Pages 发布。
+仓库 **Settings → Pages → Source** 选 **GitHub Actions** 即可。
+
+## 贡献
+
+见 [CONTRIBUTING.md](CONTRIBUTING.md)。一句话版本：开目录、写 SUMMARY、写
+markdown、跑构建；门面会自动收录。
+
+## 旧版
+
+`legacy/` 里是早期按主题组织的资料归档，只作历史参考，不参与构建。

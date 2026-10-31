@@ -1,0 +1,11 @@
+{
+  "slug": "machine-design",
+  "title": "机械设计",
+  "code": "ME-301",
+  "summary": "连接 · 传动 · 轴系 · 轴承",
+  "tags": ["连接", "传动", "轴系", "轴承"],
+  "status": "planned",
+  "order": 5,
+  "maintainers": [],
+  "updated": ""
+}

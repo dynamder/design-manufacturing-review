@@ -7,6 +7,16 @@ __pycache__/
 venv/
 node_modules/
 
+# 构建产物
+dist/
+catalog.json
+site/build/
+site/public/app.js
+courses/*/book/
+
+# 本地预览 / 截图
+shots/
+
 # 编辑器 / 系统
 .vscode/
 .idea/

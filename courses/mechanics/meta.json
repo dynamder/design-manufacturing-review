@@ -1,0 +1,11 @@
+{
+  "slug": "mechanics",
+  "title": "理论力学",
+  "code": "ME-102",
+  "summary": "静力学 · 运动学 · 动力学",
+  "tags": ["静力学", "运动学", "动力学"],
+  "status": "planned",
+  "order": 2,
+  "maintainers": [],
+  "updated": ""
+}
