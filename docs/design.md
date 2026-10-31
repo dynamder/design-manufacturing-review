@@ -128,6 +128,17 @@ palette     命令面板（覆盖层）
 mdbook 侧只做主题对齐、返回胶囊和存储拦截；不覆盖 `index.hbs`，避免
 mdbook 升级时整个主题断掉。
 
+### 6.1.1 书页排版
+
+正文 16px、行高 1.85、行宽 34em（约 32–34 字）；标题用中文衬线栈
+（Source Han Serif / Noto Serif CJK / Songti SC / SimSun），正文仍用系统黑体。
+`h2` 上方一条 1px 细线，代替正文里的 `---`；表格是三线表，13.5px；图注 12.5px、
+次要色、居中。
+
+课件原文用 `<details>` 按节折叠：每节末尾一块「本节课件原文 · N 条（页码范围）」，
+定义与结构一类的关键原文仍直接可见。打印前 `theme/course.js` 会把折叠全部展开，
+PDF 不缺内容；仍然不写任何 localStorage。
+
 ## 6.1 深浅色
 
 两边都不提供主题开关，统一跟随 `prefers-color-scheme`：

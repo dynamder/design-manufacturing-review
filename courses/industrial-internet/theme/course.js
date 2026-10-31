@@ -31,3 +31,10 @@
   link.setAttribute("aria-label", "返回课程资料库");
   document.body.appendChild(link);
 })();
+
+// 折叠的课件原文在打印/存 PDF 前全部展开，纸面上不缺内容。
+window.addEventListener("beforeprint", function () {
+  document.querySelectorAll("details").forEach(function (el) {
+    el.open = true;
+  });
+});
