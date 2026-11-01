@@ -2,12 +2,12 @@
 
 # 讲义
 
-- [Chapter 1 · One Order](ch01.md)
-- [Chapter 2 · One Blueprint](ch02.md)
-- [Chapter 3 · One Thread](ch03.md)
-- [Chapter 4 · One Service](ch04.md)
-- [Chapter 5 · One Shield](ch05.md)
-- [Chapter 6 · One Purpose](ch06.md)
+- [第一章 · 一张订单](ch01.md)
+- [第二章 · 一张蓝图](ch02.md)
+- [第三章 · 一条主线](ch03.md)
+- [第四章 · 一项服务](ch04.md)
+- [第五章 · 一面盾牌](ch05.md)
+- [第六章 · 一个目的](ch06.md)
 
 # 附录
 
