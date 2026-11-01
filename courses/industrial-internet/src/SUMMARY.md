@@ -1,26 +1,13 @@
 # Summary
 
-# 开始
-
-- [使用说明](intro.md)
-
 # 讲义
 
-- [第 1 章 一单生意](ch01.md)
-- [第 2 章 工业互联网基础技术](ch02.md)
-- [第 3 章 工业互联网体系架构](ch03.md)
-- [第 4 章 网络连接技术（标识与网络）](ch04.md)
-- [第 5 章 平台关键技术](ch05.md)
-- [第 6 章 安全技术](ch06.md)
-
-# 速查
-
-- [术语与数字速查卡](cheatsheet.md)
-
-# 练习
-
-- [自测练习（选择 / 填空 / 论述，自拟）](exam.md)
-- [自测练习答案](exam-answers.md)
+- [Chapter 1 · One Order](ch01.md)
+- [Chapter 2 · One Blueprint](ch02.md)
+- [Chapter 3 · One Thread](ch03.md)
+- [Chapter 4 · One Service](ch04.md)
+- [Chapter 5 · One Shield](ch05.md)
+- [Chapter 6 · One Purpose](ch06.md)
 
 # 附录
 
