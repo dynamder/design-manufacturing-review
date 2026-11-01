@@ -20,8 +20,8 @@
 # 练习
 
 - [自测练习（选择 / 填空 / 论述，自拟）](exam.md)
-- [自测练习答案与评分要点](exam-answers.md)
+- [自测练习答案](exam-answers.md)
 
 # 附录
 
-- [论述题框架与素材库](appendix.md)
+- [讲座、PLC 实验与术语速查](appendix.md)
