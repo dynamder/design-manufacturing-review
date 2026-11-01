@@ -11,8 +11,8 @@ build-dir = "book"
 default-theme = "light"
 preferred-dark-theme = "coal"
 mathjax-support = false
-git-repository-url = "https://github.com/dynamder/design-manufacturing-review"
-edit-url-template = "https://github.com/dynamder/design-manufacturing-review/edit/main/courses/interchangeability/src/{path}"
+git-repository-url = "https://github.com/dynamder/WHUstre"
+edit-url-template = "https://github.com/dynamder/WHUstre/edit/main/courses/interchangeability/src/{path}"
 additional-css = ["theme/course.css"]
 additional-js = ["theme/course.js"]
 

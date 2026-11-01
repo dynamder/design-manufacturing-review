@@ -4,7 +4,7 @@
 [Gleam](https://gleam.run/) + [Lustre](https://lustre.build/) 写的门面，负责
 在课程之间导航、筛选、跳章节。
 
-- 在线：<https://dynamder.github.io/design-manufacturing-review/>
+- 在线：<https://dynamder.github.io/WHUstre/>
 - 当前课程：工业互联网基础、互换性与技术测量
 - 门面不渲染正文；正文由每本书自己的 mdbook 负责
 
