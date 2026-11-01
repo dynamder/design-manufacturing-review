@@ -68,7 +68,6 @@
 │   └── scripts/                # esbuild 打包、依赖处理
 ├── scripts/                    # 构建编排 + 插图脚本
 ├── docs/                       # 设计文档 + 截图
-├── legacy/                     # 旧版按主题归档，不参与构建
 └── dist/                       # 构建产物（被 .gitignore）
 ```
 
@@ -181,7 +180,3 @@ npm run dev        # build + serve
 
 见 [CONTRIBUTING.md](CONTRIBUTING.md)。一句话版本：开目录、写 SUMMARY、写
 markdown、跑构建；门面会自动收录。
-
-## 旧版
-
-`legacy/` 里是早期按主题组织的资料归档，只作历史参考，不参与构建。
